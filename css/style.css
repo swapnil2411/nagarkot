@@ -1033,4 +1033,25 @@ table {
     visibility: visible;
 }
 
+/* Marquee Css */
+
+.horizontal_scroll_text{
+    background: #002344;
+}
+  
+marquee span {
+    font-size: 85px;
+    font-weight: 600;
+}
+
+.marqueeOne span{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #d42427;
+}
+
+.marqueeTwo span{
+    color: #fff;
+}
+
   
