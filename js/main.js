@@ -493,10 +493,10 @@ var swiper = new Swiper(".mySwiper", {
     fadeEffect: { crossFade: true },
     speed: 1000,
     effect: "fade",
-    // autoplay: {
-    //   delay: 3500,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
