@@ -994,6 +994,7 @@ table {
     opacity: 0;
     visibility: hidden;
     transition: 0.5s ease-in-out all;
+    text-align: justify;
 }
 
 .service_list .service_column .service_box .service_content .readMoreBtn{

@@ -124,7 +124,7 @@
     }
 
     .slider_content{
-        bottom: 45px;
+        bottom: 105px;
         left: 30px;
     }
 
@@ -137,7 +137,7 @@
     }
 
     .swiper-slide-active::after{
-        top: 95.2%
+        top: 95.4%
     }
 
     .swiper-slide-active::after,
@@ -259,6 +259,9 @@
 }
 
 @media (max-width: 767px){
+    .banner_area{
+        height: 95vh;
+    }
 
     .left_navbar .logo_area img{
         max-width: 100px;
@@ -349,7 +352,10 @@
     }
 
     .slider_content{
-        left: 15px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: fit-content;
     }
 
     .slider_content .slide_outerbox .slide_innerbox .slide_box .slide_heading h2,
@@ -418,7 +424,6 @@
     .slider_content{
         width: 93%;
         margin: 0 auto;
-        left: unset;
     }
 
     .service_list .service_column{
