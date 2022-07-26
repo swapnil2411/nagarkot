@@ -138,7 +138,13 @@ table {
 .footer_basic_info .basic_info_column:nth-child(1),
 .footer_basic_info .basic_info_column .address_row,
 .service_list,
-.service_content .readMoreBtn{
+.service_content .readMoreBtn,
+.why_us_section,
+.why_us_section .why_us_img_two,
+.key_figure_section,
+.key_figure_section .figures,
+.client_section .client_logo_area,
+.client_section .client_logo_area .logo_box{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1054,4 +1060,190 @@ marquee span {
     color: #fff;
 }
 
+
+/* Why Us Css */
+
+.why_us_section .why_us_img_one,
+.why_us_section .why_us_img_two{
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.why_us_section .why_us_img_one{
+    margin-bottom: 70px;
+}
+
+.why_us_section .why_us_img_one img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.why_us_section .why_us_img_two img{
+    width: 100%
+}
+
+.why_us_section .why_us_img_two{
+    align-items: flex-end;
+}
+
+/* .why_us_section .why_us_img_two{
+    flex: 0 0 25%;
+    max-width: 25%;
+} */
+
+.why_us_section .why_us_content{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 70px 0 60px;
+    margin-bottom: 70px;
+}
+
+.why_us_section .why_us_content .section_header{
+    margin-bottom: 25px;
+}
+
+.why_us_para p{
+    color: #636363;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.mob_whyus_img{
+    display: none;
+}
   
+/* Key Figure CSS */
+.key_figure_section{
+    padding-left: 50px;
+}
+
+.key_figure_section .section_header{
+    flex: 0 0 35%;
+    max-width: 35%;
+}
+
+.key_figure_section .figures{
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.key_figure_section .figures .figure_column{
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin-bottom: 25px;
+}
+
+.key_figure_section .figures .figure_column h2{
+    font-size: 80px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.key_figure_section .figures .figure_column h2 span{
+    font-size: 80px;
+}
+
+.key_figure_section .figures .figure_column h2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #707070;
+    left: 0;
+    bottom: -5px;
+}
+
+.key_figure_section .figures .figure_column span{
+    font-size: 16px;
+}
+
+.key_figure_section .figures .figure_column:nth-child(3),
+.key_figure_section .figures .figure_column:nth-child(4){
+    color: #C40404;
+}
+
+.key_figure_section .figures .figure_column:nth-child(5),
+.key_figure_section .figures .figure_column:nth-child(6){
+    color: #00A0DB;
+}
+
+/* Client Section */
+.client_section{
+    background: #E8F4FF;
+    padding-bottom: 0;
+}
+
+.client_section .client_logo_area{
+    margin-top: 50px;
+    flex-wrap: wrap;
+    border-top: 1px solid #D5D5D5;
+    position: relative;
+}
+
+.client_section .client_logo_area::before{
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -50px;
+    width: 50px;
+    height: 1px;
+    background: #D5D5D5;
+    display: block;
+    z-index: 1;
+}
+
+.client_section .client_logo_area::after{
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -50px;
+    width: 50px;
+    height: 1px;
+    background: #D5D5D5;
+    display: block;
+    z-index: 1;
+}
+
+.client_section .client_logo_area .logo_box{
+    flex: 0 0 14.28%;
+    max-width: 14.28%;
+    height: 170px;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-bottom: 1px solid #D5D5D5;
+    position: relative;
+}
+
+.client_section .client_logo_area .logo_box:not(:nth-child(7n)){
+    border-right: 1px solid #D5D5D5;
+}
+
+.client_section .client_logo_area .logo_box:nth-child(7n+1)::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: -50px;
+    width: 50px;
+    height: 1px;
+    background: #D5D5D5;
+    display: block;
+    z-index: 1;
+}
+.client_section .client_logo_area .logo_box:nth-child(7n)::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: -50px;
+    width: 50px;
+    height: 1px;
+    background: #D5D5D5;
+    display: block;
+    z-index: 1;
+}
