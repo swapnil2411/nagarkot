@@ -25,6 +25,15 @@
     .key_figure_section .figures .figure_column h2 span{
         font-size: 70px;
     }
+
+    .industry_column .industry_box .industry_content {
+        left: 35px;
+        bottom: 30px;
+    }
+
+    .industry_column .industry_box .industry_content h3{
+        font-size: 26px;
+    }
 }
 
 @media (max-width: 1199px){
@@ -123,6 +132,15 @@
 
     .client_section .client_logo_area .logo_box{
         padding: 0 10px;
+    }
+
+    .industry_column .industry_box .industry_content {
+        left: 25px;
+        bottom: 20px;
+    }
+
+    .industry_column .industry_box .industry_content h3{
+        font-size: 24px;
     }
 }
 
@@ -316,7 +334,39 @@
         display: block;
         z-index: 1;
     }
+
+    .industry_service_content{
+        flex-wrap: wrap;
+    }
+
+    .industry_service_content .section_header{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .industry_service_content .industry_para{
+        flex: 0 0 48.5%;
+        max-width: 48.5%;
+        padding-left: 0;
+    }
     
+    .industry_column .industry_box{
+        flex: 0 0 48.5%;
+        max-width: 48.5%;
+    }
+
+    .industry_column .industry_box:nth-child(4){
+        flex: 0 0 48.5%;
+        max-width: 48.5%;
+    }
+
+    .industry_column .industry_box:nth-child(5),
+    .industry_column .industry_box:nth-child(6),
+    .industry_column .industry_box:nth-child(7){
+        flex: 0 0 32%;
+        max-width: 32%;
+    }
 
     .footer_industries_section{
         flex-wrap: wrap;
@@ -481,6 +531,13 @@
         display: block;
         z-index: 1;
     }
+
+    .industry_column .industry_box:nth-child(5),
+    .industry_column .industry_box:nth-child(6),
+    .industry_column .industry_box:nth-child(7){
+        flex: 0 0 48.5%;
+        max-width: 48.5%;
+    }
     
     .footer_company_info .footer_column .footer_telephone a, .footer_company_info .footer_column .footer_email a{
         font-size: 18px;
@@ -629,6 +686,11 @@
         right: -15px;
     }
 
+    .industry_service_content .industry_para{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
     .footer_industries_section .industry_column {
         flex: 0 0 50%;
         max-width: 50%;
@@ -730,5 +792,22 @@
 
     .client_section .client_logo_area .logo_box:nth-child(3n){
         border-right: unset;
+    }
+
+    .industry_column .industry_box{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .industry_column .industry_box:nth-child(4){
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .industry_column .industry_box:nth-child(5),
+    .industry_column .industry_box:nth-child(6),
+    .industry_column .industry_box:nth-child(7){
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }

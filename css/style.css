@@ -144,7 +144,9 @@ table {
 .key_figure_section,
 .key_figure_section .figures,
 .client_section .client_logo_area,
-.client_section .client_logo_area .logo_box{
+.client_section .client_logo_area .logo_box,
+.industry_service_content,
+.industry_column{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1246,4 +1248,108 @@ marquee span {
     background: #D5D5D5;
     display: block;
     z-index: 1;
+}
+
+/* Industry Service Css */
+.industry_service_content{
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.industry_service_content .section_header,
+.industry_service_content .industry_para{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 10px;
+}
+
+.industry_service_content .industry_para{
+    padding-left: 35px;
+}
+
+.industry_column{
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.industry_column .industry_box{
+    flex: 0 0 32%;
+    max-width: 32%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.industry_column .industry_box:nth-child(4),
+.industry_column .industry_box:nth-child(5),
+.industry_column .industry_box:nth-child(6),
+.industry_column .industry_box:nth-child(7){
+    flex: 0 0 24%;
+    max-width: 24%;
+}
+
+.industry_column .industry_box::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    background: transparent;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,.8) 100%);
+}
+
+.industry_column .industry_box .industry_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.industry_column .industry_box .industry_img img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.industry_column .industry_box .industry_content{
+    position: absolute;
+    left: 55px;
+    bottom: 45px;
+    z-index: 2;
+    transform: translateY(60px);
+    transition: 0.5s ease-in-out all;
+}
+
+.industry_column .industry_box .industry_content h3{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.industry_column .industry_box .industry_content .industryReadMore{
+    background: #00A0DB;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 12px 40px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden;
+    transform: 0.75s ease-in-out all;
+}
+
+.industry_column .industry_box:hover .industry_content{
+    transform: translateY(0);
+}
+
+.industry_column .industry_box:hover .industry_content .industryReadMore{
+    opacity: 1;
+    visibility: visible;
 }
