@@ -146,7 +146,11 @@ table {
 .client_section .client_logo_area,
 .client_section .client_logo_area .logo_box,
 .industry_service_content,
-.industry_column{
+.industry_column,
+.blog_section .blog_area,
+.blog_section .blog_area .blog_column .blog_footer,
+.downloads_area .inner_download_content,
+.downloads_area .inner_download_content .download_specific_column .download_listing .pdf_list li a{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1352,4 +1356,228 @@ marquee span {
 .industry_column .industry_box:hover .industry_content .industryReadMore{
     opacity: 1;
     visibility: visible;
+}
+
+/* Auto Mobiles Css */
+.automobile_section .inner_automobile_section{
+    position: relative;
+    height: 550px;
+    background: url('../images/Case_Study_1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.automobile_content {
+    position: absolute;
+    width: 375px;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 10px;
+}
+
+.automobile_content img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.automobile_content .content_outerbox .content_innerbox{
+    background: #fff;
+    padding: 28px 40px 40px 25px;
+}
+
+.automobile_content .content_box .content_heading p{
+    color: #00A0DB;
+    font-weight: 600;
+}
+
+.automobile_content .content_box .content_heading h2{
+    font-size: 28px;
+    line-height: 37px;
+    color: #2D2D2D;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+
+.automobile_content .content_box .content_para p{
+    line-height: 24px;
+    color: #2D2D2D;
+}
+
+/* Pharama Section Css */
+/* Auto Mobiles Css */
+.pharma_section .inner_pharma_section{
+    position: relative;
+    height: 550px;
+    background: url('../images/Case_Study_2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pharma_content {
+    position: absolute;
+    width: 375px;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 10px;
+}
+
+.pharma_content img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.pharma_content .content_outerbox .content_innerbox{
+    background: #fff;
+    padding: 28px 40px 40px 25px;
+}
+
+.pharma_content .content_box .content_heading p{
+    color: #00A0DB;
+    font-weight: 600;
+}
+
+.pharma_content .content_box .content_heading h2{
+    font-size: 28px;
+    line-height: 37px;
+    color: #2D2D2D;
+    font-weight: bold;
+    margin: 30px 0px;
+}
+
+.pharma_content .content_box .content_para p{
+    line-height: 24px;
+    color: #2D2D2D;
+}
+
+/* Blog Section Css */
+.blog_section{
+    padding-bottom: 70px;
+}
+
+.blog_section .section_header{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.blog_section .blog_area{
+    flex-wrap: wrap;
+    border-top: 1px solid #DDDFE1;
+    border-bottom: 1px solid #DDDFE1;
+}
+
+.blog_section .blog_area .blog_column{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 40px;
+}
+
+.blog_section .blog_area .blog_column:hover{
+    background: #E8F4FF;
+}
+
+.blog_section .blog_area .blog_column:not(:last-child){
+    border-right: 1px solid #DDDFE1;
+}
+
+.blog_section .blog_area .blog_column .blog_content a{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    color: #2d2d2d;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.blog_section .blog_area .blog_column .blog_content a:hover{
+    color: #d42427;
+}
+
+.blog_section .blog_area .blog_column .blog_img img{
+    width: 100%;
+}
+
+.blog_section .blog_area .blog_column .blog_footer{
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+/* Downloads Page Css */
+.page_header{
+    background-image: url('../images/download_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 135px 0 40px 180px;
+}
+
+.page_header h2{
+    color: #fff;
+    font-size: 50px;
+    line-height: 85px;
+    /* font-weight: 600; */
+}
+
+.page_header p{
+    font-size: 29px;
+    line-height: 36px;
+    /* font-weight: 600; */
+    color: #fff;
+    width: 775px;
+}
+
+.downloads_area .inner_download_content{
+    flex-wrap: wrap;
+    padding: 45px 0 50px;
+}
+
+.downloads_area .inner_download_content{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.downloads_area .inner_download_content .download_specific_column{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+}
+
+.downloads_area .inner_download_content .download_specific_column:not(:last-child){
+    border-right: 1px solid #d4d4d4;
+}
+
+.downloads_area .inner_download_content .download_specific_column .download_img img{
+    width: 100%;
+}
+
+.downloads_area .inner_download_content .download_specific_column .download_listing{
+    padding: 25px;
+}
+
+.downloads_area .inner_download_content .download_specific_column .download_listing .title h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.downloads_area .inner_download_content .download_specific_column .download_listing .pdf_list li a{
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #1a1a1a;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.downloads_area .inner_download_content .download_specific_column .download_listing .pdf_list li a svg{
+    color: #00A0DB;
 }

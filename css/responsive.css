@@ -34,6 +34,38 @@
     .industry_column .industry_box .industry_content h3{
         font-size: 26px;
     }
+
+    .automobile_section .inner_automobile_section{
+        height: 510px;
+    }
+
+    .automobile_content .content_box .content_heading h2{
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .pharma_section .inner_pharma_section{
+        height: 510px;
+    }
+
+    .pharma_content .content_box .content_heading h2{
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .page_header h2{
+        font-size: 45px;
+        line-height: 80px;
+    }
+    
+    .page_header p{
+        font-size: 26px;
+        line-height: 33px;
+    }
+
+    .downloads_area .inner_download_content .download_specific_column .download_listing .title h2{
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 1199px){
@@ -141,6 +173,38 @@
 
     .industry_column .industry_box .industry_content h3{
         font-size: 24px;
+    }
+
+    .automobile_content{
+        width: 345px;
+    }
+
+    .automobile_content .content_box .content_heading h2{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .pharma_content{
+        width: 345px;
+    }
+
+    .pharma_content .content_box .content_heading h2{
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .page_header h2{
+        font-size: 40px;
+        line-height: 75px;
+    }
+    
+    .page_header p{
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .downloads_area .inner_download_content .download_specific_column .download_listing .title h2{
+        font-size: 28px;
     }
 }
 
@@ -368,6 +432,52 @@
         max-width: 32%;
     }
 
+    .automobile_content{
+        width: 325px;
+    }
+
+    .automobile_content .content_box .content_heading h2{
+        font-size: 22px;
+        line-height: 32px;
+        margin: 25px 0;
+    }
+
+    .pharma_content{
+        width: 325px;
+    }
+
+    .pharma_content .content_box .content_heading h2{
+        font-size: 22px;
+        line-height: 32px;
+        margin: 25px 0;
+    }
+
+    .page_header h2{
+        font-size: 38px;
+        line-height: 72px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .page_header p{
+        font-size: 22px;
+        line-height: 29px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .page_header{
+        padding: 135px 0 40px 0;
+    }
+
+    .downloads_area .inner_download_content .download_specific_column .download_listing .title h2{
+        font-size: 24px;
+    }
+
+    .downloads_area .inner_download_content .download_specific_column .download_listing{
+        padding: 25px 15px;
+    }
+
     .footer_industries_section{
         flex-wrap: wrap;
     }
@@ -542,6 +652,51 @@
     .industry_column .industry_box .industry_content h3 {
         font-size: 20px;
     }
+
+    .automobile_section .inner_automobile_section{
+        height: 490px;
+    }
+
+    .automobile_content{
+        left: 30px;
+    }
+
+    .pharma_section .inner_automobile_section{
+        height: 490px;
+    }
+
+    .pharma_content{
+        right: 30px;
+    }
+
+    .page_header h2{
+        font-size: 36px;
+        line-height: 70px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .page_header p{
+        font-size: 20px;
+        line-height: 27px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .downloads_area .inner_download_content .download_specific_column{
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+
+    .downloads_area .inner_download_content .download_specific_column:not(:last-child){
+        border-right: none;
+    }
+
+    .downloads_area .inner_download_content .download_specific_column:first-child{
+        border-right: 1px solid #d4d4d4;
+    }
     
     .footer_company_info .footer_column .footer_telephone a, .footer_company_info .footer_column .footer_email a{
         font-size: 18px;
@@ -695,6 +850,10 @@
         max-width: 100%;
     }
 
+    .downloads_area .inner_download_content .download_specific_column .download_listing .title h2{
+        font-size: 22px;
+    }
+
     .footer_industries_section .industry_column {
         flex: 0 0 50%;
         max-width: 50%;
@@ -820,5 +979,44 @@
     .industry_column .industry_box:nth-child(7){
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .automobile_content{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+    .automobile_content .content_outerbox .content_innerbox {
+        padding: 25px 30px 30px 20px;
+    }
+
+    .automobile_content .content_box .content_heading h2{
+        font-size: 20px;
+    }
+
+    .pharma_content{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+    }
+
+    .pharma_content .content_outerbox .content_innerbox {
+        padding: 25px 30px 30px 20px;
+    }
+
+    .pharma_content .content_box .content_heading h2{
+        font-size: 20px;
+    }
+
+    .downloads_area .inner_download_content .download_specific_column{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .downloads_area .inner_download_content .download_specific_column:first-child{
+        border-right: none;
     }
 }

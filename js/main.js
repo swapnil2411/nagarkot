@@ -445,14 +445,18 @@ class MyFooter extends HTMLElement{
 }
 customElements.define('my-footer', MyFooter);
 
+
+
 // On Scroll header background
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if (scroll >= 150){
         $('.navbar_area').css('background','#fff');
+        // $('.navbar_area .rigt_navbar nav.desktop-navbar ul li a').css('color','#000');
     }
     else{
         $('.navbar_area').css('background','transparent');
+        // $('.navbar_area .rigt_navbar nav.desktop-navbar ul li a').css('color','#fff');
     }
 })
 
