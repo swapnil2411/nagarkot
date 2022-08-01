@@ -79,6 +79,19 @@ table {
     padding-bottom: 70px;
 }
 
+.mlr{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.ml{
+    margin-left: 8px;
+}
+
+.mr{
+    margin-right: 8px;
+}
+
 .section_header .title{
     position: relative;
     color: #002856;
@@ -150,7 +163,10 @@ table {
 .blog_section .blog_area,
 .blog_section .blog_area .blog_column .blog_footer,
 .downloads_area .inner_download_content,
-.downloads_area .inner_download_content .download_specific_column .download_listing .pdf_list li a{
+.downloads_area .inner_download_content .download_specific_column .download_listing .pdf_list li a,
+/* .quote_form, */
+.quote_form .quote_dropdown .dropdown_head,
+.quote_btn button{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1580,4 +1596,112 @@ marquee span {
 
 .downloads_area .inner_download_content .download_specific_column .download_listing .pdf_list li a svg{
     color: #00A0DB;
+}
+
+
+/* Quote Section Css */
+.quote_section{
+    background: url('../images/quote_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quote_section .section_header h2{
+    color: #fff;
+}
+
+.quote_section .section_header p{
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 15px;
+    padding-left: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+
+.quote_section .quote_form{
+    padding-left: 25px;
+    width: 850px;
+}
+
+.quote_section .quote_form p{
+    font-size: 36px;
+    line-height: 49px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.quote_section .quote_form .quote_dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.quote_section .quote_form .quote_dropdown .dropdown_head{
+    align-items: center;
+    background: #0090C5;
+    color: #fff;
+    padding: 0 8px;
+    cursor: pointer
+}
+
+.quote_section .quote_form .quote_dropdown .value_dropdown{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out all;
+}
+
+.quote_section .quote_form .quote_dropdown .value_dropdown.show_value_dropdown{
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.quote_section .quote_form .quote_dropdown .value_dropdown ul li{
+    font-size: 24px;
+    padding: 10px;
+    color: #0090C5;
+    cursor: pointer;
+}
+
+.quote_section .quote_form .quote_dropdown .value_dropdown ul li:not(:last-child){
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.quote_btn{
+    padding-left: 25px;
+    margin-top: 35px;
+}
+
+.quote_btn button{
+    width: 290px;
+    background: #C40404;
+    color: #fff;
+    border: none;
+    -webkit-justify-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.quote_btn button svg{
+    font-size: 22px;
+    margin-right: 7px;
+}
+
+.quote_btn button span{
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 3px;
 }

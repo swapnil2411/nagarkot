@@ -522,3 +522,16 @@ var swiper = new Swiper(".mySwiper", {
     },
 
   });
+
+  // dropdown click get quote
+  $('.quote_section .quote_form .quote_dropdown .dropdown_head').on('click', function(){
+    $(this).siblings('.value_dropdown').toggleClass('show_value_dropdown');
+  })
+
+  $('.quote_section .quote_form .quote_dropdown .value_dropdown ul li').on('click', function(){
+    var changeTxt = $(this).text();
+    var currentDrop = $(this).parent().parent().siblings().children('.value_selected');
+    currentDrop.text(changeTxt);
+    // $('.quote_section .quote_form .quote_dropdown .dropdown_head .value_selected').text(changeTxt)
+    $(this).parent().parent().toggleClass('show_value_dropdown');
+  })

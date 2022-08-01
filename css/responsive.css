@@ -66,6 +66,18 @@
     .downloads_area .inner_download_content .download_specific_column .download_listing .title h2{
         font-size: 32px;
     }
+
+    .quote_section .section_header p{
+        font-size: 20px;
+    }
+
+    .quote_section .quote_form{
+        width: 810px;
+    }
+
+    .quote_section .quote_form p{
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 1199px){
@@ -205,6 +217,34 @@
 
     .downloads_area .inner_download_content .download_specific_column .download_listing .title h2{
         font-size: 28px;
+    }
+
+    .quote_section .section_header p {
+        font-size: 19px;
+    }
+
+    .quote_section .quote_form {
+        width: 725px;
+    }
+
+    .quote_btn button{
+        width: 260px;
+    }
+
+    .quote_section .quote_form p {
+        font-size: 30px;
+    }
+
+    .quote_btn button svg {
+        font-size: 20px;
+    }
+
+    .quote_btn button span{
+        font-size: 16px;
+    }
+
+    .blog_section .blog_area .blog_column .blog_content a{
+        font-size: 20px;
     }
 }
 
@@ -478,6 +518,23 @@
         padding: 25px 15px;
     }
 
+    .quote_section .section_header p {
+        font-size: 18px;
+    }
+
+    .quote_section .quote_form {
+        width: 680px;
+    }
+
+    .quote_section .quote_form p {
+        font-size: 28px;
+    }
+
+    .blog_section .blog_area .blog_column .blog_content a{
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
     .footer_industries_section{
         flex-wrap: wrap;
     }
@@ -697,6 +754,35 @@
     .downloads_area .inner_download_content .download_specific_column:first-child{
         border-right: 1px solid #d4d4d4;
     }
+
+    .quote_section .section_header p {
+        font-size: 16px;
+    }
+
+    .quote_section .quote_form {
+        width: 600px;
+    }
+
+    .quote_section .quote_form p {
+        font-size: 24px;
+    }
+
+    .blog_section .blog_area .blog_column{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .blog_section .blog_area .blog_column:not(:last-child) {
+        border-right: none;
+    }
+
+    .blog_section .blog_area .blog_column:nth-child(odd){
+        border-right: 1px solid #d4d4d4;
+    }
+
+    .blog_section .blog_area .blog_column{
+        padding: 25px;
+    }
     
     .footer_company_info .footer_column .footer_telephone a, .footer_company_info .footer_column .footer_email a{
         font-size: 18px;
@@ -757,6 +843,12 @@
     .footer_basic_info .basic_info_column .copyright p{
         margin-top: 25px;
         line-height: 22px;
+    }
+}
+
+@media (max-width: 640px){
+    .quote_section .quote_form {
+        width: 100%;
     }
 }
 
@@ -852,6 +944,19 @@
 
     .downloads_area .inner_download_content .download_specific_column .download_listing .title h2{
         font-size: 22px;
+    }
+
+    .quote_section .quote_form p {
+        font-size: 22px;
+    }
+
+    .blog_section .blog_area .blog_column .blog_content a {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .blog_section .blog_area .blog_column{
+        padding: 15px;
     }
 
     .footer_industries_section .industry_column {
@@ -1018,5 +1123,25 @@
 
     .downloads_area .inner_download_content .download_specific_column:first-child{
         border-right: none;
+    }
+
+    .quote_section .quote_form p {
+        font-size: 20px;
+    }
+
+    .quote_btn{
+        padding-left: 0;
+    }
+
+    .quote_btn button{
+        margin: 0 auto;
+    }
+
+    .blog_section .blog_area .blog_column .blog_footer{
+        flex-direction: column;
+    }
+
+    .blog_section .blog_area .blog_column .blog_footer p{
+        font-size: 12px;
     }
 }
