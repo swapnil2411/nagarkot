@@ -21,8 +21,8 @@ class MyHeader extends HTMLElement{
                             <a href="javascript:void(0)">Services</a>
                             <div class="menu_dropdown">
                                 <ul>
-                                    <li><a href="" data-src="images/Services/Customs Clearance.png">Customs Clearing</a></li>
-                                    <li><a href="" data-src="images/Services/Freight Forwarding.png">Freight Forwarding</a></li>
+                                    <li><a href="customclearance.html" data-src="images/Services/Customs Clearance.png">Customs Clearing</a></li>
+                                    <li><a href="freightforwarding.html" data-src="images/Services/Freight Forwarding.png">Freight Forwarding</a></li>
                                     <li><a href="" data-src="images/Services/Warehousing _ 3PL.png">Warehousing & 3PL</a></li>
                                     <li><a href="" data-src="images/Services/First-time Exim.png">First-Time Exim</a></li>
                                     <li><a href="" data-src="images/Services/Container Freight Station (CFS).png">Container Freight Station (CFS)</a></li>
@@ -79,7 +79,7 @@ class MyHeader extends HTMLElement{
                                     <li><a href="" data-src="images/Resources/Conversion.png">Conversion</a></li>
                                     <li><a href="" data-src="images/Resources/Tracking.png">Tracking</a></li>
                                     <li><a href="" data-src="images/Resources/Incoterms.png">Incoterms</a></li>
-                                    <li><a href="" data-src="images/Resources/Documents Download.png">Documents Download</a></li>
+                                    <li><a href="downloads.html" data-src="images/Resources/Documents Download.png">Documents Download</a></li>
                                 </ul>
                                 <div class="serviceImgChange">
                                     <img src="images/Resources/Exchange Rates.png" alt="Customs Clearance" class="img-fluid">
@@ -522,6 +522,18 @@ var swiper = new Swiper(".mySwiper", {
     },
 
   });
+
+  var swiper = new Swiper(".freight_slider", {
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+});
 
   // dropdown click get quote
   $('.quote_section .quote_form .quote_dropdown .dropdown_head').on('click', function(){
