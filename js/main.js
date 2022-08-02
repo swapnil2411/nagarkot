@@ -55,30 +55,30 @@ class MyHeader extends HTMLElement{
                             <a href="javascript:void(0)">Industries</a>
                             <div class="menu_dropdown">
                                 <ul>
-                                    <li><a href="" data-src="images/Industries/Automobiles.png">Automobiles</a></li>
-                                    <li><a href="" data-src="images/Industries/Chemicals.png">Chemicals</a></li>
+                                    <li><a href="automobiles.html" data-src="images/Industries/Automobiles.png">Automobiles</a></li>
+                                    <li><a href="chemicals.html" data-src="images/Industries/Chemicals.png">Chemicals</a></li>
                                     <li><a href="" data-src="images/Industries/exporters.png">First time exporter</a></li>
                                     <li><a href="" data-src="images/Industries/Logistics Companies.png">Logistics Companies</a></li>
-                                    <li><a href="" data-src="images/Industries/Manufacturing.png">Manufacturing</a></li>
-                                    <li><a href="" data-src="images/Industries/Pharma.png">Pharma</a></li>
-                                    <li><a href="" data-src="images/Industries/Textiles.png">Textiles</a></li>
+                                    <li><a href="manufacturing.html" data-src="images/Industries/Manufacturing.png">Manufacturing</a></li>
+                                    <li><a href="pharma.html" data-src="images/Industries/Pharma.png">Pharma</a></li>
+                                    <li><a href="textiles.html" data-src="images/Industries/Textiles.png">Textiles</a></li>
                                 </ul>
                                 <div class="serviceImgChange">
                                     <img src="images/Industries/Automobiles.png" alt="Customs Clearance" class="img-fluid">
                                 </div>
                             </div>
                         </li>
-                        <li><a href="javascript:void(0)">Blog</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
                         <li><a href="javascript:void(0)">Partnership</a></li>
                         <li>
                             <a href="javascript:void(0)">Resources</a>
                             <div class="menu_dropdown">
                                 <ul>
-                                    <li><a href="" data-src="images/Resources/Exchange Rates.png">Exchange Rates</a></li>
-                                    <li><a href="" data-src="images/Resources/Container Dimensions.png">Container Dimensions</a></li>
-                                    <li><a href="" data-src="images/Resources/Conversion.png">Conversion</a></li>
-                                    <li><a href="" data-src="images/Resources/Tracking.png">Tracking</a></li>
-                                    <li><a href="" data-src="images/Resources/Incoterms.png">Incoterms</a></li>
+                                    <li><a href="exchange.html" data-src="images/Resources/Exchange Rates.png">Exchange Rates</a></li>
+                                    <li><a href="dimensions " data-src="images/Resources/Container Dimensions.png">Container Dimensions</a></li>
+                                    <li><a href="conversion" data-src="images/Resources/Conversion.png">Conversion</a></li>
+                                    <li><a href="tracking" data-src="images/Resources/Tracking.png">Tracking</a></li>
+                                    <li><a href="incoterms" data-src="images/Resources/Incoterms.png">Incoterms</a></li>
                                     <li><a href="downloads.html" data-src="images/Resources/Documents Download.png">Documents Download</a></li>
                                 </ul>
                                 <div class="serviceImgChange">

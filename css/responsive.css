@@ -78,6 +78,13 @@
     .quote_section .quote_form p{
         font-size: 32px;
     }
+
+    .general_area .general_area_left {
+        padding-right: 20px;
+      }
+      .tracking .trackingRight {
+        padding-left: 70px;
+      }
 }
 
 @media (max-width: 1199px){
@@ -246,6 +253,21 @@
     .blog_section .blog_area .blog_column .blog_content a{
         font-size: 20px;
     }
+
+    .contactDetails .innerContactDetails h1 {
+        font-size: 20px;
+      }
+      .contactDetails .innerContactDetails h1 span {
+        font-size: 18px;
+      }
+      .sizeValue {
+        justify-content: start;
+      }
+      .sizeValue .innerSizeValue {
+        flex: 0 0 25%;
+        max-width: 25%;
+        margin-bottom: 15px;
+      }
 }
 
 @media (max-width: 991px){
@@ -595,6 +617,38 @@
     .footer_basic_info .basic_info_column:nth-child(2){
         padding-right: 50px;
     }
+    .contactDetails .innerContactDetails h1 {
+        font-size: 18px;
+      }
+      .contactDetails .innerContactDetails h1 span {
+        font-size: 16px;
+      }
+      .paragraphWithSpan p {
+        font-size: 36px;
+      }
+      .innerBlogsMain {
+        padding: 70px 15px 0 15px !important;
+      }
+      .tracking {
+        flex-direction: column;
+      }
+      .tracking .trackingLeft {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .tracking .trackingRight {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .tracking .trackingRight {
+        padding-left: 15px;
+      }
+      .custDrop {
+        padding-left: 0;
+      }
+      .tracking:nth-child(1) {
+        margin-bottom: 60px;
+      }
 }
 
 @media (max-width: 767px){
@@ -843,6 +897,87 @@
         margin-top: 25px;
         line-height: 22px;
     }
+
+    .general_area {
+        flex-direction: column;
+      }
+      .general_area .general_area_left,
+      .general_area .general_area_right {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .general_area .general_area_right {
+        text-align: center;
+      }
+      .input_form {
+        padding: 50px 0;
+      }
+      .contactDetails {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .contactDetails .innerContactDetailsLeft,
+      .contactDetails .innerContactDetailsRight {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .innerMidBorder {
+        flex: 0 0 50%;
+        max-width: 50%;
+        display: none;
+      }
+      .howCanIHelp span {
+        padding: 0;
+      }
+      .paragraphWithSpan {
+        padding: 30px 0 0 0;
+      }
+      .paragraphWithSpan p {
+        font-size: 32px;
+      }
+      .howCanIHelp {
+        padding: 50px 50px;
+      }
+      .submit_btn .quote_btn {
+        margin-top: 10px;
+      }
+    
+      .ulMain {
+        flex-wrap: wrap;
+      }
+      .tracking .trackingRight .body_typography {
+        flex: 0 0 30%;
+        max-width: 30%;
+        padding-bottom: 15px;
+      }
+      .tracking_2 .trackingRight .body_typography {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-bottom: 15px;
+      }
+      .tracking:nth-child(1) {
+        margin-bottom: 30px;
+      }
+      .incoterms {
+        flex-direction: column;
+      }
+      .incoterms .incotermsLeff,
+      .incoterms .incotermsRight {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .incoterms .incotermsLeff {
+        padding: 0 30px;
+      }
+      .incoterms .incotermsLeff p {
+        padding: 25px 0 0 0;
+      }
+      .lengthCalc h1,
+      .weightCalc h1,
+      .liqCalc h1,
+      .cubCalc h1 {
+        font-size: 30px;
+      }
 }
 
 @media (max-width: 640px){
@@ -995,6 +1130,42 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .automobile_para_sect p {
+        padding: 35px 0;
+      }
+      .howCanIHelp {
+        padding: 50px 20px;
+      }
+      .plainTxtBtn p {
+        font-size: 20px;
+      }
+      .exvhangeRate h1 {
+        font-size: 30px;
+      }
+      .innerExchMain {
+        padding: 0 30px 30px 30px !important;
+      }
+      .tracking .trackingRight .body_typography {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-bottom: 15px;
+      }
+      .tracking_2 .trackingRight .body_typography {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-bottom: 15px;
+      }
+      .sizeValue .innerSizeValue {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .lengthCalc h1,
+      .weightCalc h1,
+      .liqCalc h1,
+      .cubCalc h1 {
+        font-size: 25px;
+      }
 }
 
 @media (max-width: 480px){
