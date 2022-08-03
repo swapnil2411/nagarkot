@@ -79,6 +79,10 @@ table {
     padding-bottom: 70px;
 }
 
+.pt{
+    padding-top: 70px;
+}
+
 .mlr{
     margin-right: 8px;
     margin-left: 8px;
@@ -178,7 +182,8 @@ table {
 .custom_clearance_advantage .inner_clearance_advantage,
 .custom_advisor_content .inner_content,
 .custom_advisory_help_section,
-.custom_advisory_help_section .help_pointers ul{
+.custom_advisory_help_section .help_pointers ul,
+.cfs_content .inner_content{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1997,12 +2002,12 @@ marquee span {
 }
 
 .custom_clearance_content .inner_content .custom_clearance_img{
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 45%;
+    max-width: 45%;
 }
 .custom_clearance_content .inner_content .custom_clearance_content{
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 55%;
+    max-width: 55%;
     padding-left: 35px;
 }
 
@@ -2105,12 +2110,12 @@ marquee span {
 }
 
 .custom_advisor_content .inner_content .custom_advisor_img{
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 45%;
+    max-width: 45%;
 }
 .custom_advisor_content .inner_content .custom_advisor_content{
-    flex: 0 0 60%;
-    max-width: 60%;
+    flex: 0 0 55%;
+    max-width: 55%;
     padding-left: 35px;
 }
 
@@ -2150,7 +2155,35 @@ marquee span {
     padding: 0 35px 20px 0;
 }
 
+.cfs_content{
+    flex-wrap: wrap;
+}
 
+.cfs_content .inner_content{
+    flex-wrap: wrap;
+    padding: 40px 50px;
+}
+
+.cfs_content .inner_content .cfs_img{
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+.cfs_content .inner_content .cfs_content{
+    flex: 0 0 55%;
+    max-width: 55%;
+    padding-right: 35px;
+}
+
+.cfs_content .inner_content .cfs_content h3{
+    font-size: 35px;
+    line-height: 44px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.cfs_content .inner_content .cfs_content{
+    line-height: 24px;
+}
 
 /* Sandeep CSs */
 /* Automobile Page Css */

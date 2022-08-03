@@ -280,6 +280,9 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    .pt{
+        padding-top: 50px;
+    }
 
     .body_typography{
         font-size: 16px;
@@ -995,6 +998,10 @@
     .ptb{
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+
+    .pt{
+        padding-top: 30px;
     }
 
     .key_figure_section{

@@ -24,11 +24,11 @@ class MyHeader extends HTMLElement{
                                     <li><a href="customclearance.html" data-src="images/Services/Customs Clearance.png">Customs Clearing</a></li>
                                     <li><a href="freightforwarding.html" data-src="images/Services/Freight Forwarding.png">Freight Forwarding</a></li>
                                     <li><a href="" data-src="images/Services/Warehousing _ 3PL.png">Warehousing & 3PL</a></li>
-                                    <li><a href="" data-src="images/Services/First-time Exim.png">First-Time Exim</a></li>
-                                    <li><a href="" data-src="images/Services/Container Freight Station (CFS).png">Container Freight Station (CFS)</a></li>
-                                    <li><a href="" data-src="images/Services/Transportation.png">Transportation</a></li>
-                                    <li><a href="" data-src="images/Services/Customs Advisory.png">Custom Advisory</a></li>
-                                    <li><a href="" data-src="images/Services/Insurance _ Licensing.png">Insurance & Licensing</a></li>
+                                    <li><a href="firsttimeexim.html" data-src="images/Services/First-time Exim.png">First-Time Exim</a></li>
+                                    <li><a href="cfs.html" data-src="images/Services/Container Freight Station (CFS).png">Container Freight Station (CFS)</a></li>
+                                    <li><a href="transportation.html" data-src="images/Services/Transportation.png">Transportation</a></li>
+                                    <li><a href="customadvisor.html" data-src="images/Services/Customs Advisory.png">Custom Advisory</a></li>
+                                    <li><a href="insurancelicensing.html" data-src="images/Services/Insurance _ Licensing.png">Insurance & Licensing</a></li>
                                 </ul>
                                 <div class="serviceImgChange">
                                     <img src="images/Services/Customs Clearance.png" alt="Customs Clearance" class="img-fluid">
