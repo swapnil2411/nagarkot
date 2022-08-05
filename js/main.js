@@ -75,10 +75,10 @@ class MyHeader extends HTMLElement{
                             <div class="menu_dropdown">
                                 <ul>
                                     <li><a href="exchange.html" data-src="images/Resources/Exchange Rates.png">Exchange Rates</a></li>
-                                    <li><a href="dimensions " data-src="images/Resources/Container Dimensions.png">Container Dimensions</a></li>
-                                    <li><a href="conversion" data-src="images/Resources/Conversion.png">Conversion</a></li>
-                                    <li><a href="tracking" data-src="images/Resources/Tracking.png">Tracking</a></li>
-                                    <li><a href="incoterms" data-src="images/Resources/Incoterms.png">Incoterms</a></li>
+                                    <li><a href="dimensions.html" data-src="images/Resources/Container Dimensions.png">Container Dimensions</a></li>
+                                    <li><a href="conversion.html" data-src="images/Resources/Conversion.png">Conversion</a></li>
+                                    <li><a href="tracking.html" data-src="images/Resources/Tracking.png">Tracking</a></li>
+                                    <li><a href="incoterms.html" data-src="images/Resources/Incoterms.png">Incoterms</a></li>
                                     <li><a href="downloads.html" data-src="images/Resources/Documents Download.png">Documents Download</a></li>
                                 </ul>
                                 <div class="serviceImgChange">
