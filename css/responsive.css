@@ -1,6 +1,63 @@
+@media (min-width: 1200px){
+    .leadership_team_area .leadership_content .team_member_column:nth-child(4n-1) .member_desription,
+    .leadership_team_area .leadership_content .team_member_column:nth-child(4n) .member_desription{
+        left: unset;
+        right: calc(100% + 10px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+    .leadership_team_area .leadership_content .team_member_column{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    .leadership_team_area .leadership_content .team_member_column .person_box .member_pic img{
+        width: 100%;
+    }
+
+    .leadership_team_area .leadership_content .team_member_column:nth-child(3n-1) .member_desription{
+        left: 10px;   
+    }
+
+    .leadership_team_area .leadership_content .team_member_column:nth-child(3n) .member_desription{
+        left: unset;
+        right: calc(100% + 10px);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+    .leadership_team_area .leadership_content .team_member_column{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .leadership_team_area .leadership_content .team_member_column .person_box .member_pic img{
+        width: 100%;
+    }
+
+    .leadership_team_area .leadership_content .team_member_column:nth-child(2n+1) .member_desription{
+        left: 10px;
+    }
+
+    .leadership_team_area .leadership_content .team_member_column:nth-child(2n) .member_desription{
+        left: unset;
+        right: 10px;
+    }
+
+    .leadership_team_area .leadership_content .team_member_column .member_desription .author{
+        font-size: 18px;
+    }
+}
+
+
+
 @media (max-width: 1279px){
     .slider_content .slide_outerbox .slide_innerbox .slide_box .slide_heading h2,
-    .section_header .title{
+    .section_header .title,.inner_page_contact h3, .inner_page_services_explore h3,
+    .custom_clearance_content .inner_content .custom_clearance_content h3,
+    .freigt_forwarding_content .inner_content .freight_content h3,
+    .custom_advisor_content .inner_content .custom_advisor_content h3{
         font-size: 32px;
     }
 
@@ -106,7 +163,10 @@
     }
 
     .slider_content .slide_outerbox .slide_innerbox .slide_box .slide_heading h2,
-    .section_header .title{
+    .section_header .title, .inner_page_contact h3, .inner_page_services_explore h3,
+    .custom_clearance_content .inner_content .custom_clearance_content h3,
+    .freigt_forwarding_content .inner_content .freight_content h3,
+    .custom_advisor_content .inner_content .custom_advisor_content h3{
         font-size: 30px;
         line-height: 36px;
     }
@@ -268,6 +328,25 @@
         max-width: 25%;
         margin-bottom: 15px;
       }
+
+      .custom_clearance_services .custom_clearance_service_listing .service_column .service_box .service_content h3{
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      .custom_clearance_advantage .inner_clearance_advantage .clearance_advantage_content .clearance_advantage_para,
+      .custom_clearance_inclusion ul li{
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .custom_clearance_inclusion ul{
+        padding-left: 45px;
+      }
+
+      .service_advantage .inner_advantage .advntage_section ul{
+        padding: 10px 45px;
+      }
 }
 
 @media (max-width: 991px){
@@ -282,6 +361,10 @@
     }
     .pt{
         padding-top: 50px;
+    }
+
+    .pb{
+        padding-bottom: 50px;
     }
 
     .body_typography{
@@ -348,7 +431,10 @@
     }
 
     .slider_content .slide_outerbox .slide_innerbox .slide_box .slide_heading h2,
-    .section_header .title{
+    .section_header .title, .inner_page_contact h3, .inner_page_services_explore h3,
+    .custom_clearance_content .inner_content .custom_clearance_content h3,
+    .freigt_forwarding_content .inner_content .freight_content h3,
+    .custom_advisor_content .inner_content .custom_advisor_content h3{
         font-size: 26px;
         line-height: 32px;
     }
@@ -559,6 +645,38 @@
         margin-bottom: 40px;
     }
 
+      .custom_clearance_services .custom_clearance_service_listing .service_column,
+      .freight_services .freight_service_listing .service_column{
+        padding: 10px 30px;
+      }
+
+      .service_advantage .inner_advantage .section_header{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .service_advantage .inner_advantage .advntage_section{
+        flex: 0 0 80%;
+        max-width: 80%;
+        padding: 25px 25px 0;
+        margin-top: 25px;
+      }
+
+      .custom_clearance_background{
+        margin-top: -250px;
+      }
+
+      .custom_advisory_help_section .section_header,
+      .custom_advisory_help_section .help_pointers{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .custom_advisory_help_section .help_pointers{
+        margin-top: 30px;
+        padding-left: 40px;
+      }
+
     .footer_industries_section{
         flex-wrap: wrap;
     }
@@ -652,9 +770,30 @@
       .tracking:nth-child(1) {
         margin-bottom: 60px;
       }
+      .industry .industryBox {
+        padding: 19px 45px;
+      }
+      .serviceModal {
+        flex-direction: column;
+      }
+      .serviceModal .serviceModalLeft,
+      .serviceModal .serviceModalRight {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .serviceModal .serviceModalRight{
+        margin-top: 30px;
+      }
+      .serviceModal .serviceModalLeft .section_header {
+        margin-bottom: 30px;
+      }
 }
 
 @media (max-width: 767px){
+    .floating_call_btn{
+        display: flex;
+      }
+
     .banner_area{
         height: 95vh;
     }
@@ -784,9 +923,12 @@
 
     .page_header h2{
         font-size: 36px;
-        line-height: 70px;
+        line-height: 45px;
         width: 90%;
         margin: 0 auto;
+    }
+    .page_header p br{
+        display: none;
     }
     
     .page_header p{
@@ -839,6 +981,86 @@
     .blog_section .blog_area .blog_column{
         padding: 25px;
     }
+
+    .custom_clearance_content .inner_content,
+    .freigt_forwarding_content .inner_content,
+    .custom_advisor_content .inner_content{
+        padding: 40px 0px;
+      }
+
+      .custom_clearance_content .inner_content .custom_clearance_img,
+      .custom_clearance_content .inner_content .custom_clearance_content,
+      .freigt_forwarding_content .inner_content .freight_img,
+      .freigt_forwarding_content .inner_content .freight_content,
+      .custom_advisor_content .inner_content .custom_advisor_img,
+      .custom_advisor_content .inner_content .custom_advisor_content{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .custom_clearance_content .inner_content .custom_clearance_img,
+      .freigt_forwarding_content .inner_content .freight_img,
+      .custom_advisor_content .inner_content .custom_advisor_img{
+        text-align: center;
+      }
+
+      .custom_clearance_content .inner_content .custom_clearance_content,
+      .freigt_forwarding_content .inner_content .freight_content,
+      .custom_advisor_content .inner_content .custom_advisor_content{
+        padding-left: 0;
+        margin-top: 20px;
+      }
+
+    .custom_clearance_services .custom_clearance_service_listing .service_column,
+    .freight_services .freight_service_listing .service_column{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .custom_clearance_advantage .inner_clearance_advantage .clearance_advantage_content .clearance_advantage_para,
+    .custom_clearance_inclusion ul li{
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .custom_clearance_advantage .inner_clearance_advantage .clearance_advantage_content,
+      .custom_clearance_advantage .inner_clearance_advantage .clearance_advantage_img{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .custom_clearance_advantage .inner_clearance_advantage .clearance_advantage_content .clearance_advantage_para{
+        padding-left: 0;
+        margin-top: 40px;
+      }
+
+      .custom_clearance_advantage .inner_clearance_advantage .clearance_advantage_img{
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .custom_clearance_inclusion ul{
+        padding-left: 45px;
+      }
+
+      .custom_clearance_background,
+      .freight_servie_background{
+        height: 450px;
+      }
+
+      .service_advantage .inner_advantage .advntage_section h3{
+        font-size: 20px;
+      }
+
+      .custom_clearance_background img{
+        height: 100%;
+        width: 100%;
+      }
+
+      .custom_advisory_help_section .help_pointers ul li{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
     
     .footer_company_info .footer_column .footer_telephone a, .footer_company_info .footer_column .footer_email a{
         font-size: 18px;
@@ -981,6 +1203,24 @@
       .cubCalc h1 {
         font-size: 30px;
       }
+
+      .industry .industryBox {
+        flex: 0 0 33%;
+        max-width: 33%;
+      }
+      .industry .industryBox {
+        padding: 19px 30px;
+      }
+
+      .inner_page_contact .form-element{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .inner_page_contact,
+      .inner_page_services_explore{
+        width: 98%;
+      }
 }
 
 @media (max-width: 640px){
@@ -1004,6 +1244,10 @@
         padding-top: 30px;
     }
 
+    .pb{
+        padding-bottom: 30px;
+    }
+
     .key_figure_section{
         padding-left: 15px;
     }
@@ -1023,7 +1267,10 @@
     }
 
     .slider_content .slide_outerbox .slide_innerbox .slide_box .slide_heading h2,
-    .section_header .title {
+    .section_header .title, .inner_page_contact h3, .inner_page_services_explore h3,
+    .custom_clearance_content .inner_content .custom_clearance_content h3,
+    .freigt_forwarding_content .inner_content .freight_content h3,
+    .custom_advisor_content .inner_content .custom_advisor_content h3{
         font-size: 24px;
         line-height: 30px;
     }
@@ -1100,6 +1347,24 @@
         padding: 15px;
     }
 
+    .custom_clearance_services .custom_clearance_service_listing .service_column .service_box .service_content h3{
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .custom_clearance_services .custom_clearance_service_listing{
+        padding: 0;
+      }
+
+      .custom_clearance_services .custom_clearance_service_listing .service_column,
+      .freight_services .freight_service_listing .service_column{
+        padding: 10px 15px;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      
+
     .footer_industries_section .industry_column {
         flex: 0 0 50%;
         max-width: 50%;
@@ -1173,6 +1438,17 @@
       .cubCalc h1 {
         font-size: 25px;
       }
+
+      .freight_slider .swiper-button-next, .freight_slider .swiper-button-prev {
+        right: 0;
+        left: unset;
+        margin: 0;
+    }
+
+    .service_advantage .inner_advantage .advntage_section{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 480px){
@@ -1320,5 +1596,19 @@
 
     .blog_section .blog_area .blog_column .blog_footer p{
         font-size: 12px;
+    }
+
+    .freight_slider .swiper-button-next, .freight_slider .swiper-button-prev{
+        bottom: 0;
+        top: unset;
+        right: 50%;
+    }
+
+    .freight_slider .swiper-button-next{
+        right: calc(50% - 15px);
+    }
+
+    .freight_slider .swiper-button-prev{
+        right: calc(50% + 15px);
     }
 }

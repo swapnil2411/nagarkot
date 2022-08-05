@@ -39,10 +39,10 @@ class MyHeader extends HTMLElement{
                             <a href="javascript:void(0)">About Us</a>
                             <div class="menu_dropdown">
                                 <ul>
-                                    <li><a href="" data-src="images/About/Overview.png">Overview</a></li>
-                                    <li><a href="" data-src="images/About/Industry Affiliations.png">Industry Affiliations</a></li>
-                                    <li><a href="" data-src="images/About/Service Model.png">Service Model</a></li>
-                                    <li><a href="" data-src="images/About/Leadership Team.png">Leadership Team</a></li>
+                                    <li><a href="overview.html" data-src="images/About/Overview.png">Overview</a></li>
+                                    <li><a href="industryaffiliations.html" data-src="images/About/Industry Affiliations.png">Industry Affiliations</a></li>
+                                    <li><a href="servicemodel" data-src="images/About/Service Model.png">Service Model</a></li>
+                                    <li><a href="team.html" data-src="images/About/Leadership Team.png">Leadership Team</a></li>
                                     <li><a href="" data-src="images/About/Case Studies.png">Case Studies</a></li>
                                     <li><a href="" data-src="images/About/Customer Testimonials.png">Customer Testimonials</a></li>
                                 </ul>
@@ -57,8 +57,8 @@ class MyHeader extends HTMLElement{
                                 <ul>
                                     <li><a href="automobiles.html" data-src="images/Industries/Automobiles.png">Automobiles</a></li>
                                     <li><a href="chemicals.html" data-src="images/Industries/Chemicals.png">Chemicals</a></li>
-                                    <li><a href="" data-src="images/Industries/exporters.png">First time exporter</a></li>
-                                    <li><a href="" data-src="images/Industries/Logistics Companies.png">Logistics Companies</a></li>
+                                    <li><a href="firsttimeexporter.html" data-src="images/Industries/exporters.png">First time exporter</a></li>
+                                    <li><a href="logisticscompanies.html" data-src="images/Industries/Logistics Companies.png">Logistics Companies</a></li>
                                     <li><a href="manufacturing.html" data-src="images/Industries/Manufacturing.png">Manufacturing</a></li>
                                     <li><a href="pharma.html" data-src="images/Industries/Pharma.png">Pharma</a></li>
                                     <li><a href="textiles.html" data-src="images/Industries/Textiles.png">Textiles</a></li>
@@ -445,8 +445,6 @@ class MyFooter extends HTMLElement{
 }
 customElements.define('my-footer', MyFooter);
 
-
-
 // On Scroll header background
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
@@ -521,9 +519,9 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
 
-  });
+});
 
-  var swiper = new Swiper(".freight_slider", {
+var swiper = new Swiper(".freight_slider", {
     loop: true,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -536,14 +534,25 @@ var swiper = new Swiper(".mySwiper", {
 });
 
   // dropdown click get quote
-  $('.quote_section .quote_form .quote_dropdown .dropdown_head').on('click', function(){
+$('.quote_section .quote_form .quote_dropdown .dropdown_head').on('click', function(){
     $(this).siblings('.value_dropdown').toggleClass('show_value_dropdown');
-  })
+})
 
-  $('.quote_section .quote_form .quote_dropdown .value_dropdown ul li').on('click', function(){
+$('.quote_section .quote_form .quote_dropdown .value_dropdown ul li').on('click', function(){
     var changeTxt = $(this).text();
     var currentDrop = $(this).parent().parent().siblings().children('.value_selected');
     currentDrop.text(changeTxt);
     // $('.quote_section .quote_form .quote_dropdown .dropdown_head .value_selected').text(changeTxt)
     $(this).parent().parent().toggleClass('show_value_dropdown');
-  })
+})
+
+// team area
+$('.leadership_team_area .leadership_content .team_member_column .person_box').on('click', function(){
+    $(this).siblings('.member_desription').addClass('show_description');
+    $(this).parent().siblings().find('.member_desription').removeClass('show_description');
+})
+
+
+$('.leadership_team_area .leadership_content .team_member_column .member_desription .close_popup').on('click', function(){
+    $('.member_desription').removeClass('show_description');
+})

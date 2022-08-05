@@ -79,6 +79,10 @@ table {
     padding-bottom: 70px;
 }
 
+.pb{
+    padding-bottom: 70px;
+}
+
 .pt{
     padding-top: 70px;
 }
@@ -183,7 +187,10 @@ table {
 .custom_advisor_content .inner_content,
 .custom_advisory_help_section,
 .custom_advisory_help_section .help_pointers ul,
-.cfs_content .inner_content{
+.cfs_content .inner_content,
+.overview_section_intro,
+.overview_section_ending,
+.leadership_team_area .leadership_content{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1852,6 +1859,7 @@ marquee span {
 
 .freight_slider{
     margin-top: 30px;
+    height: 505px;
 }
 
 .freight_slider .swiper-slide .frieght_slider_content{
@@ -1862,6 +1870,12 @@ marquee span {
     max-width: 100%;
     height: auto;
     width: unset;
+}
+
+.freight_slider .swiper-slide .innerpagesliderimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .freight_slider .swiper-slide::before,
@@ -2051,6 +2065,9 @@ marquee span {
     -webkit-justify-content: space-between;
     -webkit-box-pack: justify;
     justify-content: space-between;
+    -webkit-align-items: end;
+    -webkit-box-align: end;
+    align-items: end;
 }
 
 .custom_clearance_advantage .inner_clearance_advantage .clearance_advantage_content{
@@ -2185,7 +2202,205 @@ marquee span {
     line-height: 24px;
 }
 
-/* Sandeep CSs */
+/* Overview Page CSS */
+
+.overview_section_intro{
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.overview_section_intro .overview_img,
+.overview_section_intro .overview_content{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.overview_section_intro .overview_img img{
+    width: 100%
+}
+
+.overview_section_intro .overview_content{
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+.overview_section_intro .overview_content h3{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #1a1a1a;
+}
+
+.overview_section_intro .overview_content h2{
+    font-size: 80px;
+    font-weight: 600;
+    color: #c40404;
+}
+
+.overview_section_intro .overview_content p{
+    line-height: 29px;
+    margin-top: 35px;
+}
+
+.overview_section_middleintro{
+    position: relative;
+}
+
+.overview_section_middleintro .para{
+    width: 544px;
+    color: #fff;
+    background: #00A0DB;
+    padding: 25px;
+    line-height: 24px;
+    position: absolute;
+    right: 60px;
+    top: -50px;
+}
+
+.overview_section_ending{
+    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.overview_section_ending .overview_img,
+.overview_section_ending .overview_content{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.overview_section_ending .overview_content p{
+    line-height: 29px;
+}
+
+/* Teams Area */
+
+.leadership_team_area .leadership_content{
+    flex-wrap: wrap;
+}
+
+.leadership_team_area .leadership_content .team_member_column{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 10px;
+    position: relative;
+}
+
+.leadership_team_area .leadership_content .team_member_column .person_box{
+    position: relative;
+    cursor: pointer;
+}
+
+.leadership_team_area .leadership_content .team_member_column .person_box:hover .yrExperience{
+    background: #002344;
+    color: #fff;
+}
+
+.leadership_team_area .leadership_content .team_member_column .person_box:hover .member_info{
+    background: #c40404;
+}
+
+.leadership_team_area .leadership_content .team_member_column .person_box .yrExperience{
+    background: #00A0DB;
+    color: #000;
+    width: 100px;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.leadership_team_area .leadership_content .team_member_column .person_box .yrExperience p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.leadership_team_area .leadership_content .team_member_column .person_box .yrExperience p strong{
+    font-weight: 600;
+}
+
+.leadership_team_area .leadership_content .team_member_column .person_box .member_pic img{
+    display: block;
+}
+
+.leadership_team_area .leadership_content .team_member_column .person_box .member_info{
+    color: #fff;
+    background: #000000B0;
+    text-align: center;
+    padding: 6px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.leadership_team_area .leadership_content .team_member_column .person_box .member_info .author{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.leadership_team_area .leadership_content .team_member_column .member_desription{
+    width: calc(200% - 20px);
+    position: absolute;
+    top: 10px;
+    left: calc(100% + 10px);
+    height: calc(100% - 20px);
+    z-index: 1;
+    background: #002344;
+    padding: 25px;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out all;
+    overflow-y: auto;
+}
+
+.leadership_team_area .leadership_content .team_member_column .member_desription::-webkit-scrollbar{
+    width: 4px;
+}
+
+.leadership_team_area .leadership_content .team_member_column .member_desription::-webkit-scrollbar-track{
+    background: #e6e6e6;
+}
+
+.leadership_team_area .leadership_content .team_member_column .member_desription::-webkit-scrollbar-thumb{
+    background: #c40404;
+}
+
+
+.leadership_team_area .leadership_content .team_member_column .member_desription.mediumScreen{
+    left: unset;
+    right: calc(100% + 10px);
+}
+
+.leadership_team_area .leadership_content .team_member_column .member_desription.show_description{
+    opacity: 1;
+    visibility: visible;
+}
+
+.leadership_team_area .leadership_content .team_member_column .member_desription .close_popup{
+    font-size: 26px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.leadership_team_area .leadership_content .team_member_column .member_desription .author{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 36px;
+}
+
+.leadership_team_area .leadership_content .team_member_column .member_desription p{
+    line-height: 27px;
+}
+
+/******************************** Sandeep CSS *************************************/
 /* Automobile Page Css */
 .page_header_automobile {
     background-image: url("../images/automobile_bg.png");
@@ -2513,9 +2728,17 @@ marquee span {
   .exvhangeRate .body_typography {
     padding-right: 15px;
   }
-  
-  .imgDefWithIconRed {
-    background: #c40404;
+
+  .imgDefWithIcon{
+    cursor: pointer;
+  }
+
+  .imgDefWithIcon:hover{
+    background: #C40404;
+  }
+
+    .imgDefWithIcon:hover span,
+    .imgDefWithIcon:hover svg{
     color: #fff;
   }
   
@@ -2526,7 +2749,7 @@ marquee span {
   }
   
   .imgDefWithIcon svg {
-    color: #fff;
+    color: #00A0DB;
   }
   
   .tracking {
@@ -2752,4 +2975,64 @@ marquee span {
     color: #c40404;
     padding-left: 20px;
     text-decoration: none;
+  }
+
+  
+.industry {
+    background: url(../images/affi_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    margin-top: 20px;
+  }
+  
+  .industry .industryBox {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+  }
+
+  .industry .industryBox:not(:nth-child(4n)){
+    border-right: 1px solid #d4d4d4;
+  }
+
+  .industry .industryBox:not(:nth-child(4n))
+  
+  .serviceModal .incoterms .incotermsLeff {
+    padding-left: 0;
+  }
+  
+  .serviceModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .serviceModal .serviceModalLeft {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .serviceModal .serviceModalLeft .section_header {
+    margin-bottom: 50px;
+  }
+  .serviceModal .serviceModalLeft p {
+    font-weight: 400;
+    line-height: 26.78px;
+    color: #2d2d2d;
+  }
+  .serviceModal .serviceModalRight {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: right;
+  }
+
+  .floating_call_btn{
+    display: none;
   }
