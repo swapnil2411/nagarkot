@@ -533,7 +533,7 @@ var swiper = new Swiper(".freight_slider", {
     },
 });
 
-  // dropdown click get quote
+// dropdown click get quote
 $('.quote_section .quote_form .quote_dropdown .dropdown_head').on('click', function(){
     $(this).siblings('.value_dropdown').toggleClass('show_value_dropdown');
 })
@@ -555,4 +555,9 @@ $('.leadership_team_area .leadership_content .team_member_column .person_box').o
 
 $('.leadership_team_area .leadership_content .team_member_column .member_desription .close_popup').on('click', function(){
     $('.member_desription').removeClass('show_description');
+})
+
+// Dimensions Accordion
+$('.container_dimensions_section .panel-title > a').on('click', function(){
+    console.log($(this).parent().parent().parent().siblings().children('.panel-collapse').removeClass('show'))
 })
