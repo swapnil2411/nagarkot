@@ -447,6 +447,50 @@ class MyFooter extends HTMLElement{
 }
 customElements.define('my-footer', MyFooter);
 
+
+// Common floating contact form
+class MyContactForm extends HTMLElement{
+    connectedCallback() {
+        this.innerHTML = `
+        <section class="floating_contact_area">
+        <div class="contact_button">
+            <span class="contact_txt body_typography_medium">Contact</span>
+            <span class="line"></span>
+            <span class="closeIt">
+                <span class="iconify" data-icon="eva:close-fill"></span>
+            </span>
+        </div>
+        <div class="floating_contact_form">
+            <div class="form-element">
+                <label for="name" class="body_typography_medium">I am</label>
+                <input type="text" name="name" id="name" placeholder="Name*" class="form-control">
+            </div>
+            <div class="form-element">
+                <label for="country" class="body_typography_medium">from</label>
+                <input type="text" name="country" id="country" placeholder="Company, Country*" class="form-control">
+            </div>
+            <div class="form-element">
+                <label for="name" class="body_typography_medium">Looking for</label>
+                <input type="text" name="name" id="name" placeholder="Service" class="form-control">
+            </div>
+            <div class="form-element">
+                <label for="name" class="body_typography_medium">Call me at</label>
+                <input type="text" name="name" id="name" placeholder="Phone Number*" class="form-control">
+            </div>
+            <div class="form-element">
+                <button type="submit" class="btnus">
+                    <span class="iconify" data-icon="bi:send"></span>
+                    <span>RECIEVE A CALLBACK</span>
+                </button>
+            </div>
+            <p>We’ll call you within one business day</p>
+        </div>
+    </section>
+        `
+    }
+}
+customElements.define('my-contact-form', MyContactForm);
+
 // On Scroll header background
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
@@ -576,4 +620,10 @@ $('.tab_panels .tabs li').on('click', function(){
             $(this).addClass('active');
         })
     })
+})
+
+// contact floating click
+$('.floating_contact_area .contact_button').on('click', function(){
+    $('.floating_contact_area').toggleClass('slideout');
+    $('.floating_contact_area .contact_button .closeIt').toggleClass('showClose');
 })

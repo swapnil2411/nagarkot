@@ -38,7 +38,13 @@ body {
 	line-height: 1;
     font-family: 'Proxima Nova Rg';
     top: 0 !important;
+    overflow-x: hidden;
 }
+
+html{
+    overflow-x: hidden;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -198,7 +204,10 @@ table {
 .location_maps_info .tab_panels .tabs,
 .industry_association_represent .inner_content,
 .organisation_page_contact .contact_form form,
-.client_testimonial_section .cilents_area{
+.client_testimonial_section .cilents_area,
+.floating_contact_area,
+.floating_contact_area .contact_button,
+.floating_contact_area .floating_contact_form .form-element button{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -217,7 +226,7 @@ table {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 5;
 }
 
 .navbar_area .rigt_navbar{
@@ -3613,3 +3622,107 @@ marquee span {
     text-align: center;
   }
   
+
+  /* Floating Contact Css */
+
+  .floating_contact_area{
+    width: 315px;
+    position: absolute;
+    top: 220px;
+    z-index: 4;
+    right: -260px;
+    transition: 0.5s ease-in-out all;
+  }
+
+  .floating_contact_area.slideout{
+    right: 0;
+  }
+
+  .floating_contact_area .contact_button{
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 55px;
+    height: 171px;
+    background: #c40404;
+    padding: 20px 0;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  .floating_contact_area .contact_button .line{
+    height: 40px;
+    width: 1px;
+    background: #fff;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .contact_txt{
+    writing-mode: vertical-rl;
+    color: #fff;
+  }
+
+  .floating_contact_area .contact_button svg{
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .floating_contact_area .contact_button .closeIt{
+    display: none;
+  }
+
+  .floating_contact_area .contact_button .closeIt.showClose{
+    display: block;
+  }
+
+  .floating_contact_area .floating_contact_form{
+    background: #002856;
+    padding: 15px;
+    width: 260px;
+  }
+
+  .floating_contact_area .floating_contact_form p{
+    font-size: 13px;
+    color: #fff;
+  }
+
+  .floating_contact_area .floating_contact_form label{
+    color: #fff;
+  }
+
+  .floating_contact_area .floating_contact_form .form-element{
+    margin-bottom: 5px;
+  }
+
+  .floating_contact_area .floating_contact_form input{
+    height: 35px;
+    border: 1px solid #E3E3E3;
+    border-radius: 0;
+  }
+
+  .floating_contact_area .floating_contact_form .form-element button{
+    background: #00A0DB;
+    color: #fff;
+    height: 35px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .floating_contact_area .floating_contact_form .form-element button span{
+    font-size: 11px;
+    margin-left: 8px;
+  }
+
+  .floating_contact_area .floating_contact_form .form-element button svg{
+    font-size: 16px;
+  }
