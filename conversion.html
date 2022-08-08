@@ -51,44 +51,45 @@
       <div class="conversionMain">
         <div class="lengthCalc">
           <h1>Length Converter</h1>
-          <div class="sizeValue">
+          <div class="sizeValue" id="frm1">
             <div class="innerSizeValue">
               <p class="body_typography">Millimeters</p>
-              <input type="text" />
+              <input type="text" id="mm" name="mm"/>
             </div>
             <div class="innerSizeValue">
               <p class="body_typography">Centimeters</p>
-              <input type="text" />
+              <input type="text" id="cm" name="cm"/>
             </div>
             <div class="innerSizeValue">
               <p class="body_typography">Meters</p>
-              <input type="text" />
+              <input type="text" id="mtr" name="mtr"/>
             </div>
             <div class="innerSizeValue">
               <p class="body_typography">Inches</p>
-              <input type="text" />
+              <input type="text" id="inch2" name="inch"/>
             </div>
             <div class="innerSizeValue">
               <p class="body_typography">Feet</p>
-              <input type="text" />
+              <input type="text" id="feet2" name="feet"/>
             </div>
             <div class="innerSizeValue">
               <p class="body_typography">Yards</p>
-              <input type="text" />
+              <input type="text" id="yards2" name="yards"/>
             </div>
             <div class="innerSizeValue">
               <p class="body_typography">Miles</p>
-              <input type="text" />
+              <input type="text" id="miles2" name="miles"/>
             </div>
             <div class="innerSizeValue">
               <p class="body_typography">Nautical Miles</p>
-              <input type="text" />
+              <input type="text" id="nmiles2" name="nmiles"/>
             </div>
           </div>
           <div class="btnGroup text-center">
-            <a href="javascript:void(0)" target="_blank">
-              <span>Calculate</span>
-            </a>
+            <button type="button" onclick="calDistance()">Calculate</button>
+            <!-- <a href="javascript:void(0)" onclick="calDistance()">
+              <span></span>
+            </a> -->
             <a href="javascript:void(0)">
               <span>Clear</span>
             </a>
@@ -258,6 +259,135 @@
       $(function () {
         $(".selectpicker").selectpicker();
       });
+
+      function calDistance(){
+//alert(document.frm1.mtr.value + "");
+//frm1.mtr.value = isNaN(frm1.mtr.value)
+//alert(isNaN(frm1.mtr.value) + "");
+if (document.frm1.mtr.value != ""){
+  if (isNaN(document.frm1.mtr.value) == false){ 
+  
+    document.frm1.mm.value = document.frm1.mtr.value * 1000
+    document.frm1.cm.value = document.frm1.mtr.value * 100
+    document.frm1.inch.value = document.frm1.mtr.value * 39.3701
+    document.frm1.feet.value = document.frm1.mtr.value * 3.28084
+    document.frm1.yards.value = document.frm1.mtr.value * 1.09361
+    document.frm1.miles.value = document.frm1.mtr.value * 0.00062137
+    document.frm1.nmiles.value = document.frm1.mtr.value * 0.000547
+  }else{
+    alert ("please enter numeric value")
+    document.frm1.mtr.value = "";
+  }
+}
+else if (document.frm1.mm.value != ""){
+  if (isNaN(document.frm1.mm.value) == false){ 
+    document.frm1.mtr.value = document.frm1.mm.value / 1000
+  
+
+    document.frm1.cm.value = document.frm1.mtr.value * 100
+    document.frm1.inch.value = document.frm1.mtr.value * 39.3701
+    document.frm1.feet.value = document.frm1.mtr.value * 3.28084
+    document.frm1.yards.value = document.frm1.mtr.value * 1.09361
+    document.frm1.miles.value = document.frm1.mtr.value * 0.00062137
+    document.frm1.nmiles.value = document.frm1.mtr.value * 0.000547
+  }else{
+    alert ("please enter numeric value")
+    document.frm1.mm.value = "";
+  }
+}
+else if (document.frm1.cm.value != ""){
+  if (isNaN(document.frm1.cm.value) == false){ 
+    document.frm1.mtr.value = document.frm1.cm.value / 100
+  
+
+    document.frm1.mm.value = document.frm1.mtr.value * 1000
+    document.frm1.inch.value = document.frm1.mtr.value * 39.3701
+    document.frm1.feet.value = document.frm1.mtr.value * 3.28084
+    document.frm1.yards.value = document.frm1.mtr.value * 1.09361
+    document.frm1.miles.value = document.frm1.mtr.value * 0.00062137
+    document.frm1.nmiles.value = document.frm1.mtr.value * 0.000547
+  }else{
+    alert ("please enter numeric value")
+    document.frm1.cm.value = "";
+  }
+}
+else if (document.frm1.inch.value != ""){
+  if (isNaN(document.frm1.inch.value) == false){ 
+    document.frm1.mtr.value = document.frm1.inch.value / 39.3701
+    
+    document.frm1.mm.value = document.frm1.mtr.value * 1000
+    document.frm1.cm.value = document.frm1.mtr.value * 100
+    document.frm1.feet.value = document.frm1.mtr.value * 3.28084
+    document.frm1.yards.value = document.frm1.mtr.value * 1.09361
+    document.frm1.miles.value = document.frm1.mtr.value * 0.00062137
+    document.frm1.nmiles.value = document.frm1.mtr.value * 0.000547
+  }else{
+    alert ("please enter numeric value")
+    document.frm1.inch.value = "";
+  }
+}
+else if (document.frm1.feet.value != ""){
+  if (isNaN(document.frm1.feet.value) == false){ 
+    document.frm1.mtr.value = document.frm1.feet.value / 3.28084
+    
+    document.frm1.mm.value = document.frm1.mtr.value * 1000
+    document.frm1.cm.value = document.frm1.mtr.value * 100
+    document.frm1.inch.value = document.frm1.mtr.value * 39.3701
+    document.frm1.yards.value = document.frm1.mtr.value * 1.09361
+    document.frm1.miles.value = document.frm1.mtr.value * 0.00062137
+    document.frm1.nmiles.value = document.frm1.mtr.value * 0.000547
+  }else{
+    alert ("please enter numeric value")
+    document.frm1.feet.value = "";
+  }
+}
+else if (document.frm1.yards.value != ""){
+  if (isNaN(document.frm1.yards.value) == false){ 
+    document.frm1.mtr.value = document.frm1.yards.value / 1.09361
+    
+    document.frm1.mm.value = document.frm1.mtr.value * 1000
+    document.frm1.cm.value = document.frm1.mtr.value * 100
+    document.frm1.inch.value = document.frm1.mtr.value * 39.3701
+    document.frm1.feet.value = document.frm1.mtr.value * 3.28084 
+    document.frm1.miles.value = document.frm1.mtr.value * 0.00062137
+    document.frm1.nmiles.value = document.frm1.mtr.value * 0.000547
+  }else{
+    alert ("please enter numeric value")
+    document.frm1.yards.value = "";
+  }
+}
+else if (document.frm1.miles.value != ""){
+  if (isNaN(document.frm1.miles.value) == false){ 
+    document.frm1.mtr.value = document.frm1.miles.value / 0.00062137
+    
+    document.frm1.mm.value = document.frm1.mtr.value * 1000
+    document.frm1.cm.value = document.frm1.mtr.value * 100
+    document.frm1.inch.value = document.frm1.mtr.value * 39.3701
+    document.frm1.feet.value = document.frm1.mtr.value * 3.28084 
+    document.frm1.yards.value = document.frm1.mtr.value * 1.09361 
+    document.frm1.nmiles.value = document.frm1.mtr.value * 0.000547
+  }else{
+    alert ("please enter numeric value")
+    document.frm1.miles.value = "";
+  }
+}
+else if (document.frm1.nmiles.value != ""){
+  if (isNaN(document.frm1.nmiles.value) == false){ 
+    document.frm1.mtr.value = document.frm1.nmiles.value / 0.000547
+    
+    document.frm1.mm.value = document.frm1.mtr.value * 1000
+    document.frm1.cm.value = document.frm1.mtr.value * 100
+    document.frm1.inch.value = document.frm1.mtr.value * 39.3701
+    document.frm1.feet.value = document.frm1.mtr.value * 3.28084 
+    document.frm1.yards.value = document.frm1.mtr.value * 1.09361 
+    document.frm1.miles.value = document.frm1.mtr.value * 0.00062137 
+  }else{
+    alert ("please enter numeric value")
+    document.frm1.nmiles.value = "";
+  }
+}
+}
+
     </script>
   </body>
 </html>

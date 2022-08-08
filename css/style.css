@@ -191,7 +191,14 @@ table {
 .overview_section_intro,
 .overview_section_ending,
 .leadership_team_area .leadership_content,
-.container_dimensions_section .panel-title > a{
+.container_dimensions_section .panel-title > a,
+.location_box .location_content .location_info .location_inner_content,
+.location_box .location_content .location_info .location_inner_content .description,
+.location_box .location_content .location_img_area,
+.location_maps_info .tab_panels .tabs,
+.industry_association_represent .inner_content,
+.organisation_page_contact .contact_form form,
+.client_testimonial_section .cilents_area{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -793,6 +800,15 @@ table {
 /* Banner SLider Css */
 .banner_area{
     height: 100vh;
+    position: relative;
+}
+
+.bannerArc{
+    position: absolute;
+    bottom: -185px;
+    right: 0;
+    max-width: 46%;
+    z-index: 2;
 }
 
 .banner_area .swiper-slide{
@@ -1163,6 +1179,16 @@ marquee span {
 /* Key Figure CSS */
 .key_figure_section{
     padding-left: 50px;
+    position: relative;
+}
+
+.keyFigArc{
+    position: absolute;
+    bottom: -110px;
+    left: -50px;
+    max-width: 45%;
+    z-index: -1;
+    opacity: 0.6;
 }
 
 .key_figure_section .section_header{
@@ -2203,6 +2229,319 @@ marquee span {
     line-height: 24px;
 }
 
+/* Warehousing page css */
+.warehousing_sec .inner_content .freight_content{
+    padding-left: 0;
+    padding-right: 100px;
+    margin-top: 50px;
+}
+
+.warehousing_sec .inner_content .freight_content h3{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.warehousing_section_middleintro{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.warehousing_section_middleintro .section_header{
+    margin-bottom: 35px;
+}
+
+.warehousing_section_middleintro .para{
+    width: 544px;
+    color: #fff;
+    background: #00A0DB;
+    padding: 25px;
+    line-height: 24px;
+    position: absolute;
+    left: 50px;
+    top: 110px;
+}
+.warehousing_section_middleintro .middle_intro_img{
+    margin-top: 150px;
+}
+
+
+.warehousing_sec .inner_content .freight_content h3::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #d42427;
+    left: -50px;
+    top: 0;
+    display: block;
+}
+
+.warehouse_locations_area .section_header{
+    margin-bottom: 30px;
+}
+
+.location_box .location_content .location_info{
+    padding-left: 30px;
+}
+
+.location_box .location_content .location_info .location_name{
+    font-size: 35px;
+    line-height: 44px;
+    margin-bottom: 18px;
+}
+
+.location_box .location_content .location_info .location_inner_content{
+    flex-wrap: wrap;
+}
+
+.location_box .location_content .location_info .location_inner_content .longi_lati{
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.location_box .location_content .location_info .location_inner_content .longi_lati p{
+    font-weight: 600;
+}
+
+.location_box .location_content .location_info .location_inner_content .longi_lati p span{
+    font-weight: 400;
+    color: #00A0DB;
+}
+
+.location_box .location_content .location_info .location_inner_content .description{
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.location_box .location_content .location_info .location_inner_content .description p:nth-child(1){
+    margin-right: 25px;
+    font-weight: 600;
+}
+
+.location_box .location_content .location_info .location_inner_content .description p{
+    line-height: 24px;
+}
+
+.location_box .location_content .location_img_area{
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.location_box .location_content .location_img_area img{
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+.location_maps_info{
+    background: #E8F4FF;
+    margin-top: -110px;
+    padding-top: 110px;
+}
+
+.location_maps_info .text-center{
+    font-weight: 600;
+}
+
+.location_maps_info .tab_panels .tabs{
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.location_maps_info .tab_panels .tabs{
+    margin: 40px 0;
+}
+
+.location_maps_info .tab_panels .tabs li{
+    cursor: pointer;
+    position: relative;
+}
+
+.location_maps_info .tab_panels .tabs li.active::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -8px;
+    left: 0;
+    display: block;
+    background: #c40404;
+}
+
+.location_maps_info .tab_panels .tabs li:hover{
+    color: #C40404;
+}
+
+.location_maps_info .tab_panels .panel{
+    display: none;
+    margin-bottom: 0;
+}
+
+.location_maps_info .tab_panels .panel.active{
+    display: block;
+}
+
+.location_maps_info .tab_panels .panel img{
+    width: 100%;
+}
+
+.kalamboli_warehouse_map_info{
+    margin-top: -60px;
+}
+
+/* Partnership & Nomination */
+.partnership_sec .inner_content .freight_content{
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding-left: 0;
+}
+
+.partnership_sec .inner_content .freight_content h3{
+    position: relative;
+}
+
+.partnership_sec .inner_content .freight_content h3::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #d42427;
+    left: -50px;
+    top: 0;
+    display: block;
+}
+
+.partnership_sec .inner_content .freight_img{
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 25px;
+}
+
+.industry_association_represent .inner_content{
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.industry_association_represent .inner_content .industry_association_img,
+.industry_association_represent .inner_content .industry_association_para{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.industry_association_represent .inner_content .industry_association_para{
+    padding: 0 40px 0 20px;
+}
+
+.industry_association_represent .inner_content .industry_association_para p{
+    line-height: 24px;
+}
+
+.organisation_page_contact{
+    background: #E8F4FF;
+}
+
+.organisation_page_contact .contact_form{
+    width: 65%;
+    margin: 0 auto;
+    padding: 50px 0 0;
+}
+
+.organisation_page_contact .contact_form form{
+    flex-wrap: wrap;
+}
+
+.organisation_page_contact .contact_form form .form-element{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    margin-bottom: 25px;
+}
+
+.organisation_page_contact .contact_form form .form-element input, .organisation_page_contact .contact_form form .form-element textarea {
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    background: transparent;
+}
+
+.organisation_page_contact .contact_form form .form-element:nth-child(5), .organisation_page_contact .contact_form form .form-element:nth-child(6){
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.organisation_page_contact .contact_form form .form-element:nth-child(6){
+    text-align: center;
+}
+
+
+.organisation_page_contact .contact_form form .form-element:nth-child(6) button{
+    width: 124px;
+    height: 45px;
+    background: #C40404;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Testimonail Section */
+.client_testimonial_section{
+    padding-top: 40px;
+}
+
+.client_testimonial_section .cilents_area{
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.client_testimonial_section .cilents_area .testionial_column{
+    flex: 0 0 46%;
+    max-width: 46%;
+    margin-top: 80px;
+}
+
+.client_testimonial_section .cilents_area .testionial_column .testimonial_box .client_brand_img{
+    height: 105px;
+}
+
+.client_testimonial_section .cilents_area .testionial_column .testimonial_box .client_content p{
+    line-height: 27px;
+    text-align: justify;
+    margin: 25px 0 15px;
+}
+
+.client_testimonial_section .cilents_area .testionial_column .testimonial_box .client_content a{
+    color: #c40404;
+    text-decoration: none;
+}
+
+.client_testimonial_section .cilents_area .testionial_column .testimonial_box .client_content a strong{
+    font-weight: 600;
+}
+
+.client_testimonial_section .cilents_area .testionial_column .testimonial_box .client_content a:hover{
+    text-decoration: none;
+}
+
+
 /* Overview Page CSS */
 
 .overview_section_intro{
@@ -2946,7 +3285,16 @@ marquee span {
     border-right: 1px solid #d4d4d4;
   }
 
-  .industry .industryBox:not(:nth-child(4n))
+  .industry .industryBox{
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.industry .industryBox:nth-last-child(1),
+    .industry .industryBox:nth-last-child(2),
+    .industry .industryBox:nth-last-child(3),
+    .industry .industryBox:nth-last-child(4){
+        border-bottom: none;
+    }
   
   .serviceModal .incoterms .incotermsLeff {
     padding-left: 0;
@@ -3060,3 +3408,208 @@ marquee span {
   .container_dimension_table .table>thead:first-child>tr:first-child>th{
     border-top: 1px solid #ddd;
   }
+
+  /* Careers Page */
+  /* 8/7/2022 */
+
+.page_header_career{
+    background-image: url('../images/career_header.png');
+}
+.topImgSect img {
+    width: 100%;
+  }
+  
+  .topInfoSect {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .topInfoSect .topInfoSectLeft,
+  .topInfoSect .topInfoSectRight {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  .topInfoSect .topInfoSectLeft p {
+    font-weight: 400;
+    line-height: 26.78px;
+  }
+  
+  .topInfoSect .topInfoSectRight {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 0 30px 0 0;
+  }
+  .topInfoSect .topInfoSectRight p {
+    font-size: 45px;
+    font-weight: 400;
+    position: relative;
+    line-height: 72.81px;
+  }
+  .topInfoSect .topInfoSectRight p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #00a0db;
+  }
+  
+  .topInfoSect .topInfoSectRight p span {
+    color: #c40404;
+  }
+  
+  .textAreaSect {
+    padding-top: 60px;
+  }
+  .careerFieldArea {
+    padding: 70px 100px;
+  }
+  .careerFieldArea .innerCareerArea {
+    margin-bottom: 30px;
+  }
+  
+  .careerFieldArea input {
+    border: none;
+    border-bottom: 0.8px solid #2d2d2d;
+    width: 100%;
+    padding-bottom: 10px;
+    outline: none;
+  }
+  
+  .careerFieldArea .innerCareerArea a {
+    background: #c40404;
+    color: #fff;
+    padding: 5px 18px;
+  }
+  
+  .careerFieldArea .custom-file-input {
+    color: transparent;
+    position: relative;
+    border: none;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    background: url("../images/cv.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 15px;
+    padding: 5px 8px;
+  }
+  .custInnerCareerArea {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  
+  .custInnerCareerArea label {
+    width: 200px;
+  }
+  .custInnerCareerArea input {
+    width: fit-content;
+  }
+  
+  .whatEmpSay {
+    background: #e8f4ff;
+    padding: 30px 0 60px 0;
+  }
+  
+  .whatEmpSay .section_header {
+    padding: 0 0 35px 0;
+  }
+  
+  .whatWeSayInner {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .whatWeSayInner .whatWeSayInnerLeft {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  
+  .whatWeSayInner .whatWeSayInnerRight {
+    background: #fff;
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  
+  .whatWeSayInner .whatWeSayInnerRight h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35.71px;
+    padding: 30px 0 0 30px;
+  }
+  .whatWeSayInner .whatWeSayInnerRight h2 {
+    padding: 0 0 30px 30px;
+    font-weight: 600;
+    line-height: 26.78px;
+  }
+  
+  .whatWeSayInner .whatWeSayInnerRight p {
+    padding: 0 60px 0 30px;
+    line-height: 26.78px;
+  }
+  
+  .whatWeSayInnerRight .owl-carousel {
+    height: 100%;
+  }
+  .inner-owl {
+    position: relative;
+  }
+  
+  .inner-owl::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+    background: #c40404;
+  }
+  .inner-owl::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: #fff;
+    z-index: 9;
+  }
+  
+  .whatWeSayInnerRight .owl-nav {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    padding: 0 14px;
+    background: #c40404;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .whatWeSayInnerRight .owl-nav button {
+    font-size: 55px !important;
+  }
+  
+  .plainText p {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 59.78px;
+    text-align: center;
+  }
+  

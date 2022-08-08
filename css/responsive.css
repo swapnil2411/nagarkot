@@ -50,20 +50,19 @@
     }
 }
 
-
-
 @media (max-width: 1279px){
     .slider_content .slide_outerbox .slide_innerbox .slide_box .slide_heading h2,
     .section_header .title,.inner_page_contact h3, .inner_page_services_explore h3,
     .custom_clearance_content .inner_content .custom_clearance_content h3,
     .freigt_forwarding_content .inner_content .freight_content h3,
     .custom_advisor_content .inner_content .custom_advisor_content h3,
-    .container_dimensions_section .panel-title > a span{
-        font-size: 32px;
+    .container_dimensions_section .panel-title > a span,
+    .location_box .location_content .location_info .location_name{
+        font-size: 32px !important;
     }
 
     .slider_content{
-        width: 335px;
+        width: 335px !important;
     }
 
     .service_list .service_column .service_box .service_content{
@@ -154,6 +153,10 @@
 }
 
 @media (max-width: 1199px){
+    .bannerArc{
+        bottom: -150px;
+    }
+
     .container_dimensions_section .container{
         max-width: 100%;
     }
@@ -180,18 +183,19 @@
     .custom_clearance_content .inner_content .custom_clearance_content h3,
     .freigt_forwarding_content .inner_content .freight_content h3,
     .custom_advisor_content .inner_content .custom_advisor_content h3,
-    .container_dimensions_section .panel-title > a span{
-        font-size: 30px;
-        line-height: 36px;
+    .container_dimensions_section .panel-title > a span,
+    .location_box .location_content .location_info .location_name{
+        font-size: 30px !important;
+        line-height: 36px !important;
     }
 
     .slider_content{
-        width: 300px;
+        width: 300px !important;
     }
 
     .swiper-slide-active::after,
     .swiper-slide-active::before{
-        left: calc(50% - 87px);
+        left: calc(50% - 87px) !important;
     }
 
     .navbar_area .rigt_navbar nav ul li:not(:last-child){
@@ -373,6 +377,27 @@
       .container_dimension_table .tbHeading{
         font-size: 22px;
       }
+
+      .location_maps_info .tab_panels .tabs{
+        margin: 40;
+      }
+
+      .location_maps_info .tab_panels .tabs li{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .custInnerCareerArea label {
+        width: 300px;
+      }
+      .whatWeSayInnerRight .owl-nav button {
+        font-size: 40px !important;
+      }
+      .whatWeSayInner .whatWeSayInnerRight p {
+        padding: 0 60px 20px 30px;
+      }
 }
 
 @media (max-width: 991px){
@@ -422,9 +447,13 @@
         font-size: 18px;
     }
 
+    .bannerArc{
+        bottom: -100px;
+    }
+
     .slider_content{
-        bottom: 105px;
-        left: 30px;
+        bottom: 100px !important;
+        left: 30px !important;
     }
 
     .slider_footer{
@@ -441,7 +470,7 @@
 
     .swiper-slide-active::after,
     .swiper-slide-active::before{
-        left: calc(50% - 135px);
+        left: calc(50% - 135px) !important;
     }
 
     .slider_footer{
@@ -453,7 +482,7 @@
     }
 
     .slider_content {
-        width: 270px;
+        width: 270px !important;
     }
 
     .slider_content .slide_outerbox .slide_innerbox .slide_box .slide_heading h2,
@@ -461,9 +490,10 @@
     .custom_clearance_content .inner_content .custom_clearance_content h3,
     .freigt_forwarding_content .inner_content .freight_content h3,
     .custom_advisor_content .inner_content .custom_advisor_content h3,
-    .container_dimensions_section .panel-title > a span{
-        font-size: 26px;
-        line-height: 32px;
+    .container_dimensions_section .panel-title > a span,
+    .location_box .location_content .location_info .location_name{
+        font-size: 26px !important;
+        line-height: 32px !important;
     }
 
     .slider_content .slide_outerbox .slide_innerbox .slide_box .slide_para p{
@@ -716,6 +746,16 @@
         padding-left: 40px;
       }
 
+      .location_box .location_content .location_info .location_inner_content .longi_lati,
+      .location_box .location_content .location_info .location_inner_content .description{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .location_box .location_content .location_info .location_inner_content .description{
+        margin-top: 15px;
+      }
+
     .footer_industries_section{
         flex-wrap: wrap;
     }
@@ -847,6 +887,32 @@
       .general_purpose_table{
         margin: 50px auto 0;
       }
+
+      .topInfoSect .topInfoSectRight p {
+        font-size: 35px;
+        line-height: 72.81px;
+      }
+      .custInnerCareerArea label {
+        width: 235px;
+      }
+      .whatWeSayInner {
+        flex-direction: column;
+      }
+      .whatWeSayInner .whatWeSayInnerLeft,
+      .whatWeSayInner .whatWeSayInnerRight {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .whatWeSayInner .whatWeSayInnerLeft {
+        text-align: center;
+      }
+      .owl-carousel .owl-dots.disabled,
+      .owl-carousel .owl-nav.disabled {
+        display: flex !important;
+      }
+      .plainText p {
+        font-size: 28px;
+      }
 }
 
 @media (max-width: 767px){
@@ -856,6 +922,14 @@
 
     .banner_area{
         height: 95vh;
+    }
+
+    .bannerArc{
+        bottom: 0px;
+    }
+
+    .keyFigArc{
+        max-width: 60%;
     }
 
     .left_navbar .logo_area img{
@@ -1137,7 +1211,8 @@
         padding-left: 0;
       }
 
-      .overview_section_middleintro .para{
+      .overview_section_middleintro .para,
+      .warehousing_section_middleintro .para{
         width: 80%;
         left: 50%;
         transform: translateX(-50%);
@@ -1148,7 +1223,32 @@
         margin: 10px 0;
       }
 
-      
+      .warehousing_sec .inner_content{
+        flex-direction: column-reverse;
+      }
+
+      .warehousing_sec .inner_content .freight_content{
+        padding-right: 0;
+      }
+
+      .industry_association_represent .inner_content .industry_association_img,
+        .industry_association_represent .inner_content .industry_association_para{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .industry_association_represent .inner_content .industry_association_para{
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .organisation_page_contact .contact_form{
+            width: 98%;
+        }
+
+        .organisation_page_contact .contact_form form .form-element{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
     
     .footer_company_info .footer_column .footer_telephone a, .footer_company_info .footer_column .footer_email a{
         font-size: 18px;
@@ -1296,6 +1396,25 @@
         flex: 0 0 33%;
         max-width: 33%;
       }
+
+      .industry .industryBox:nth-last-child(1),
+    .industry .industryBox:nth-last-child(2),
+    .industry .industryBox:nth-last-child(3){
+        border-bottom: none;
+    }
+
+    .industry .industryBox:nth-last-child(4){
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+      .industry .industryBox:not(:nth-child(4n)){
+        border-right: none;
+      }
+
+      .industry .industryBox:not(:nth-child(3n)){
+        border-right: 1px solid #d4d4d4;
+      }
+
       .industry .industryBox {
         padding: 19px 30px;
       }
@@ -1309,6 +1428,32 @@
       .inner_page_services_explore{
         width: 98%;
       }
+
+      .location_box .location_content .location_info{
+        padding-left: 0;
+      }
+
+      .topInfoSect .topInfoSectLeft,
+  .topInfoSect .topInfoSectRight {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .topInfoSect {
+    flex-direction: column;
+  }
+  .topInfoSect .topInfoSectRight {
+    margin-left: auto;
+  }
+  .careerFieldArea {
+    padding: 70px 50px;
+  }
+  .custInnerCareerArea label {
+    width: 100px;
+  }
+  .plainText p {
+    font-size: 25px;
+    line-height: 28px;
+  }
 }
 
 @media (max-width: 640px){
@@ -1340,6 +1485,14 @@
         padding-left: 15px;
     }
 
+    .bannerArc{
+        max-width: 60%;
+    }
+
+    .keyFigArc{
+        max-width: 100%;
+    }
+
     .mobile_navbar{
         width: 100%;
     }
@@ -1349,8 +1502,8 @@
     }
 
     .slider_content{
-        left: unset;
-        margin: 0 auto;
+        left: unset !important;
+        margin: 0 auto !important;
         height: fit-content;
     }
 
@@ -1359,9 +1512,10 @@
     .custom_clearance_content .inner_content .custom_clearance_content h3,
     .freigt_forwarding_content .inner_content .freight_content h3,
     .custom_advisor_content .inner_content .custom_advisor_content h3,
-    .container_dimensions_section .panel-title > a span{
-        font-size: 24px;
-        line-height: 30px;
+    .container_dimensions_section .panel-title > a span,
+    .location_box .location_content .location_info .location_name{
+        font-size: 24px !important;
+        line-height: 30px !important;
     }
 
     .swiper-slide-active::after, .swiper-slide-active::before{
@@ -1456,6 +1610,10 @@
         width: 93%;
     }
 
+    .warehousing_section_middleintro .para{
+        width: 85%;
+    }
+
     .middle_intro_img{
         height: 350px;
     }
@@ -1477,6 +1635,22 @@
     .container_dimension_table .tbHeading{
         font-size: 18px;
       }
+
+      .location_box .location_content .location_img_area img{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .location_maps_info .tab_panels .tabs li{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .client_testimonial_section .cilents_area .testionial_column{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 
     .footer_industries_section .industry_column {
         flex: 0 0 50%;
@@ -1562,12 +1736,57 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .topInfoSect .topInfoSectRight p {
+        font-size: 28px;
+      }
+      .custInnerCareerArea label {
+        width: 120px;
+      }
+      .careerFieldArea {
+        padding: 40px 0;
+      }
+      .whatWeSayInner .whatWeSayInnerRight p {
+        padding: 0 20px 20px 30px;
+      }
+      .whatWeSayInnerRight .owl-nav button {
+        font-size: 30px !important;
+      }
+      .plainText p {
+        font-size: 20px;
+      }
+
+      .industry .industryBox {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    
+
+
+    .industry .industryBox:nth-last-child(1),
+    .industry .industryBox:nth-last-child(2){
+        border-bottom: none;
+    }
+
+    .industry .industryBox:nth-last-child(3){
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+
+      .industry .industryBox:not(:nth-child(3n)){
+        border-right: none;
+      }
+
+      .industry .industryBox:not(:nth-child(2n)){
+        border-right: 1px solid #d4d4d4;
+      }
 }
 
 @media (max-width: 480px){
     .slider_content{
-        width: 93%;
-        margin: 0 auto;
+        width: 93% !important;
+        margin: 0 auto !important;
     }
 
     .service_list .service_column{
@@ -1733,4 +1952,8 @@
         margin-right: 0;
         font-size: 20px;
     }
+
+    .custInnerCareerArea label {
+        width: 170px;
+      }
 }

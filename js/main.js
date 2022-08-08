@@ -23,7 +23,7 @@ class MyHeader extends HTMLElement{
                                 <ul>
                                     <li><a href="customclearance.html" data-src="images/Services/Customs Clearance.png">Customs Clearing</a></li>
                                     <li><a href="freightforwarding.html" data-src="images/Services/Freight Forwarding.png">Freight Forwarding</a></li>
-                                    <li><a href="" data-src="images/Services/Warehousing _ 3PL.png">Warehousing & 3PL</a></li>
+                                    <li><a href="warehouseing.html" data-src="images/Services/Warehousing _ 3PL.png">Warehousing & 3PL</a></li>
                                     <li><a href="firsttimeexim.html" data-src="images/Services/First-time Exim.png">First-Time Exim</a></li>
                                     <li><a href="cfs.html" data-src="images/Services/Container Freight Station (CFS).png">Container Freight Station (CFS)</a></li>
                                     <li><a href="transportation.html" data-src="images/Services/Transportation.png">Transportation</a></li>
@@ -44,7 +44,7 @@ class MyHeader extends HTMLElement{
                                     <li><a href="servicemodel" data-src="images/About/Service Model.png">Service Model</a></li>
                                     <li><a href="team.html" data-src="images/About/Leadership Team.png">Leadership Team</a></li>
                                     <li><a href="" data-src="images/About/Case Studies.png">Case Studies</a></li>
-                                    <li><a href="" data-src="images/About/Customer Testimonials.png">Customer Testimonials</a></li>
+                                    <li><a href="testimonials.html" data-src="images/About/Customer Testimonials.png">Customer Testimonials</a></li>
                                 </ul>
                                 <div class="serviceImgChange">
                                     <img src="images/About/Overview.png" alt="Customs Clearance" class="img-fluid">
@@ -69,7 +69,7 @@ class MyHeader extends HTMLElement{
                             </div>
                         </li>
                         <li><a href="blogs.html">Blog</a></li>
-                        <li><a href="javascript:void(0)">Partnership</a></li>
+                        <li><a href="partnerships.html">Partnership</a></li>
                         <li>
                             <a href="javascript:void(0)">Resources</a>
                             <div class="menu_dropdown">
@@ -264,7 +264,7 @@ class MyFooter extends HTMLElement{
                             <img src="images/icon/exchange.svg" alt="Exchange Rate" class="img-fluid">
                         </div>
                         <div class="industry_name">
-                            <a href="#" class="body_typography">Exchange<br>Rates</a>
+                            <a href="exchange.html" class="body_typography">Exchange<br>Rates</a>
                         </div>
                     </div>
                     <div class="industry_column">
@@ -272,7 +272,7 @@ class MyFooter extends HTMLElement{
                             <img src="images/icon/ship-container.svg" alt="Ship Containe" class="img-fluid">
                         </div>
                         <div class="industry_name">
-                            <a href="#" class="body_typography">Container<br>Dimensions</a>
+                            <a href="dimensions.html" class="body_typography">Container<br>Dimensions</a>
                         </div>
                     </div>
                     <div class="industry_column">
@@ -280,7 +280,7 @@ class MyFooter extends HTMLElement{
                             <img src="images/icon/filter.svg" alt="Conversion" class="img-fluid">
                         </div>
                         <div class="industry_name">
-                            <a href="#" class="body_typography">Conversion</a>
+                            <a href="conversion.html" class="body_typography">Conversion</a>
                         </div>
                     </div>
                     <div class="industry_column">
@@ -288,7 +288,7 @@ class MyFooter extends HTMLElement{
                             <img src="images/icon/map.svg" alt="Tracking" class="img-fluid">
                         </div>
                         <div class="industry_name">
-                            <a href="#" class="body_typography">Tracking</a>
+                            <a href="tracking.html" class="body_typography">Tracking</a>
                         </div>
                     </div>
                     <div class="industry_column">
@@ -296,7 +296,7 @@ class MyFooter extends HTMLElement{
                             <img src="images/icon/clipboard.svg" alt="Incoterms" class="img-fluid">
                         </div>
                         <div class="industry_name">
-                            <a href="#" class="body_typography">Incoterms</a>
+                            <a href="incoterms.html" class="body_typography">Incoterms</a>
                         </div>
                     </div>
                     <div class="industry_column">
@@ -304,7 +304,7 @@ class MyFooter extends HTMLElement{
                             <img src="images/icon/download.svg" alt="Document Download" class="img-fluid">
                         </div>
                         <div class="industry_name">
-                            <a href="#" class="body_typography">Document<br>Download</a>
+                            <a href="downloads.html" class="body_typography">Document<br>Download</a>
                         </div>
                     </div>
                 </div>
@@ -312,7 +312,9 @@ class MyFooter extends HTMLElement{
                 <div class="footer_company_info">
                     <div class="footer_column">
                         <div class="footer_logo">
-                            <img src="images/Footer Logo.png" alt="Nagarkot" class="img-fluid">
+                            <a href="index.html">
+                                <img src="images/Footer Logo.png" alt="Nagarkot" class="img-fluid">
+                            </a>
                         </div>
                         <div class="footer_telephone">
                             <span class="heaing">Tel</span>
@@ -329,14 +331,14 @@ class MyFooter extends HTMLElement{
                         </div>
                         <div class="column_links">
                             <ul>
-                                <li><a href="#">Customs Clearing</a></li>
-                                <li><a href="#">Freight Forwarding</a></li>
-                                <li><a href="#">Warehousing & 3PL</a></li>
-                                <li><a href="#">First Time Exim</a></li>
-                                <li><a href="#">Container Freight Station (CFS)</a></li>
-                                <li><a href="#">Transportation</a></li>
-                                <li><a href="#">Customs Advisory</a></li>
-                                <li><a href="#">Insurance & Licensing</a></li>
+                                <li><a href="customclearance.html">Customs Clearing</a></li>
+                                <li><a href="freightforwarding.html">Freight Forwarding</a></li>
+                                <li><a href="warehousing.html">Warehousing & 3PL</a></li>
+                                <li><a href="firsttimeexim.html">First Time Exim</a></li>
+                                <li><a href="cfs.html">Container Freight Station (CFS)</a></li>
+                                <li><a href="transportation.html">Transportation</a></li>
+                                <li><a href="customadvisor.html">Customs Advisory</a></li>
+                                <li><a href="insurancelicensing.html">Insurance & Licensing</a></li>
                             </ul>
                         </div>
                     </div>
@@ -346,12 +348,12 @@ class MyFooter extends HTMLElement{
                         </div>
                         <div class="column_links">
                             <ul>
-                                <li><a href="#">Overview</a></li>
-                                <li><a href="#">Leadership Team</a></li>
-                                <li><a href="#">Accreditations & Affiliations</a></li>
-                                <li><a href="#">Customer Testimonials</a></li>
+                                <li><a href="overview.html">Overview</a></li>
+                                <li><a href="team.html">Leadership Team</a></li>
+                                <li><a href="industryaffiliations.html">Accreditations & Affiliations</a></li>
+                                <li><a href="testimonials.html">Customer Testimonials</a></li>
                                 <li><a href="#">Case Studies</a></li>
-                                <li><a href="#">Service Model</a></li>
+                                <li><a href="servicemodel.html">Service Model</a></li>
                             </ul>
                         </div>
                     </div>
@@ -363,41 +365,41 @@ class MyFooter extends HTMLElement{
                         </div>
                         <div class="column_links">
                             <ul>
-                                <li><a href="#">Automobiles</a></li>
-                                <li><a href="#">Textiles</a></li>
-                                <li><a href="#">Pharma</a></li>
-                                <li><a href="#">Chemicals</a></li>
-                                <li><a href="#">Manufacturing</a></li>
-                                <li><a href="#">First time importers/ exporters</a></li>
-                                <li><a href="#">Logistics Companies</a></li>
+                                <li><a href="automobiles.html">Automobiles</a></li>
+                                <li><a href="textiles.html">Textiles</a></li>
+                                <li><a href="pharma.html">Pharma</a></li>
+                                <li><a href="chemicals.html">Chemicals</a></li>
+                                <li><a href="manufacturing.html">Manufacturing</a></li>
+                                <li><a href="firsttimeexporter.html">First time importers/ exporters</a></li>
+                                <li><a href="logisticscompanies.html">Logistics Companies</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="footer_column quick_links">
                         <div class="column_heading">
-                            <a href="#">Partnership Opportunities</a>
+                            <a href="partnerships.html">Partnership Opportunities</a>
                         </div>
                         <div class="column_heading">
-                            <a href="#">Blog</a>
+                            <a href="blog.html">Blog</a>
                         </div>
                         <div class="column_heading">
-                            <a href="#">Contact Us</a>
+                            <a href="contactus.html">Contact Us</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="footer_other_link">
                     <div class="column_heading" style="visibility: hidden;">
-                        <a href="#">Partnership Opportunities</a>
+                        <a href="partnerships.html">Partnership Opportunities</a>
                     </div>
                     <div class="column_heading">
-                        <a href="#">Partnership Opportunities</a>
+                        <a href="partnerships.html">Partnership Opportunities</a>
                     </div>
                     <div class="column_heading">
-                        <a href="#">Blog</a>
+                        <a href="blog.html">Blog</a>
                     </div>
                     <div class="column_heading">
-                        <a href="#">Contact Us</a>
+                        <a href="contactus.html">Contact Us</a>
                     </div>
                 </div>
 
@@ -560,4 +562,18 @@ $('.leadership_team_area .leadership_content .team_member_column .member_desript
 // Dimensions Accordion
 $('.container_dimensions_section .panel-title > a').on('click', function(){
     console.log($(this).parent().parent().parent().siblings().children('.panel-collapse').removeClass('show'))
+})
+
+// warehouse tab click
+
+$('.tab_panels .tabs li').on('click', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+    var panelToShow = $(this).attr('rel');
+
+    $('.tab_panels .panel.active').fadeOut(500, function(){
+        $(this).removeClass('active');
+        $('#' + panelToShow).fadeIn(500, function(){
+            $(this).addClass('active');
+        })
+    })
 })
