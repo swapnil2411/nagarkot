@@ -3627,7 +3627,7 @@ marquee span {
 
   .floating_contact_area{
     width: 315px;
-    position: absolute;
+    position: fixed;
     top: 220px;
     z-index: 4;
     right: -260px;
@@ -3725,4 +3725,70 @@ marquee span {
 
   .floating_contact_area .floating_contact_form .form-element button svg{
     font-size: 16px;
+  }
+
+  /* Conversion */
+
+  .comparisonTable form{
+    padding: 40px 0;
+  }
+
+  .comparisonTable form:not(:last-child){
+    border-bottom: 1px solid #00A0DB;
+  }
+
+  .comparisonTable table tr td{
+    text-align: center;
+    padding: 10px;
+  }
+
+  .comparisonTable table tr td.text strong{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #2d2d2d;
+    margin-bottom: 35px;
+    display: block;
+  }
+
+  .comparisonTable table tr td.innertxt{
+    color: #1a1a1a;
+    padding-bottom: 15px;
+  }
+
+  .comparisonTable table tr td input[type='text'],
+  .comparisonTable table tr td select{
+    background: #E8F4FF;
+    height: 30px;
+    border: none;
+  }
+
+  .comparisonTable table tr td input:focus,
+  .comparisonTable table tr td select:focus{
+    border: 1px solid #c40404;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .comparisonTable table .buttonGrp{
+    margin-top: 20px;
+  }
+
+  .comparisonTable table tr td input[type='button'],
+  .comparisonTable table tr td input[type='reset']{
+    width: 110px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    height: 30px;
+    background: transparent;
+  }
+
+  .comparisonTable table tr td input[type='button']{
+    background: #c40404;
+    color: #fff;
+  }
+
+  .comparisonTable table tr td input[type='reset']{
+    color: #c40404;
   }

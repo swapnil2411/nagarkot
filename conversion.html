@@ -52,156 +52,159 @@
     </section>
 
     <section class="plr">
-      <div class="conversionMain">
-        <div class="lengthCalc">
-          <h1>Length Converter</h1>
-          <div class="sizeValue" id="frm1">
-            <div class="innerSizeValue">
-              <p class="body_typography">Millimeters</p>
-              <input type="text" id="mm" name="mm"/>
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Centimeters</p>
-              <input type="text" id="cm" name="cm"/>
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Meters</p>
-              <input type="text" id="mtr" name="mtr"/>
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Inches</p>
-              <input type="text" id="inch2" name="inch"/>
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Feet</p>
-              <input type="text" id="feet2" name="feet"/>
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Yards</p>
-              <input type="text" id="yards2" name="yards"/>
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Miles</p>
-              <input type="text" id="miles2" name="miles"/>
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Nautical Miles</p>
-              <input type="text" id="nmiles2" name="nmiles"/>
-            </div>
-          </div>
-          <div class="btnGroup text-center">
-            <button type="button" onclick="calDistance()">Calculate</button>
-            <!-- <a href="javascript:void(0)" onclick="calDistance()">
-              <span></span>
-            </a> -->
-            <a href="javascript:void(0)">
-              <span>Clear</span>
-            </a>
-          </div>
-        </div>
-        <div class="weightCalc">
-          <h1>Weight Converter</h1>
-          <div class="sizeValue">
-            <div class="innerSizeValue">
-              <p class="body_typography">Grams</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Kilograms</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Ounces</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Pounds</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Tons</p>
-              <input type="text" />
-            </div>
-          </div>
-          <div class="btnGroup text-center">
-            <a href="javascript:void(0)" target="_blank">
-              <span>Calculate</span>
-            </a>
-            <a href="javascript:void(0)">
-              <span>Clear</span>
-            </a>
-          </div>
-        </div>
-        <div class="liqCalc">
-          <h1>Liquid Volume Converter</h1>
-          <div class="sizeValue">
-            <div class="innerSizeValue">
-              <p class="body_typography">Litres</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Fluid Ounces</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Quarts</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Gallons</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Imperial Gallons</p>
-              <input type="text" />
-            </div>
-          </div>
-          <div class="btnGroup text-center">
-            <a href="javascript:void(0)" target="_blank">
-              <span>Calculate</span>
-            </a>
-            <a href="javascript:void(0)">
-              <span>Clear</span>
-            </a>
-          </div>
-        </div>
-        <div class="cubCalc">
-          <h1>Cubic Meter Converter</h1>
-          <div class="sizeValue">
-            <div class="innerSizeValue">
-              <p class="body_typography">Height</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Width</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Length</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Unit</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Qty.</p>
-              <input type="text" />
-            </div>
-            <div class="innerSizeValue">
-              <p class="body_typography">Cu.Meter</p>
-              <input type="text" />
-            </div>
-          </div>
-          <div class="btnGroup text-center">
-            <a href="javascript:void(0)" target="_blank">
-              <span>Calculate</span>
-            </a>
-            <a href="javascript:void(0)">
-              <span>Clear</span>
-            </a>
-          </div>
-        </div>
+      <div class="comparisonTable table-responsive">  
+        <form id="frm1" name="frm1">
+          <table width="100%" cellspacing="0" cellpadding="2" border="0" style="color:#666;">
+            <tbody>
+              <tr>
+                <td class="text" colspan="8"><strong class="head_styl">Length Converter </strong></td>
+              </tr>
+              <tr class="text">
+                <td class="innertxt">Millimeters</td>
+                <td class="innertxt">Centimeters</td>
+                <td><div class="innertxt">Meters</div></td>
+                <td><div class="innertxt">Inches</div></td>
+                <td><div class="innertxt">Feet</div></td>
+                <td><div class="innertxt">Yards</div></td>
+                <td><div class="innertxt">Miles</div></td>
+                <td><div class="innertxt">Nautical 
+                  Miles</div></td>
+              </tr>
+              <tr>
+                <td><input type="text" size="10" id="mm" name="mm"></td>
+                <td><input type="text" size="10" id="cm" name="cm"></td>
+                <td><input type="text" size="10" id="mtr" name="mtr" class="innertxt"></td>
+                <td><input type="text" size="10" id="inch2" name="inch" class="innertxt"></td>
+                <td><input type="text" size="10" id="feet2" name="feet" class="innertxt"></td>
+                <td><input type="text" size="10" id="yards2" name="yards" class="innertxt"></td>
+                <td><input type="text" size="10" id="miles2" name="miles" class="innertxt"></td>
+                <td><input type="text" size="10" id="nmiles2" name="nmiles" class="innertxt"></td>
+              </tr>
+              <tr>
+                <td colspan="8">
+                <div align="center" class="buttonGrp">
+                    <input type="button" onclick="calDistance()" value="Calculate" name="Submit3222" class="buttn">
+                    <input type="reset" value="Clear" name="Submit22222" class="buttn">
+                </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+          
+        <form id="frm2" name="frm2">
+          <table width="100%" cellspacing="0" cellpadding="2" border="0">
+            <tbody>
+              <tr>
+                <td class="text" colspan="5"><strong class="head_styl">Weight 
+                    Converter </strong>
+                </td>
+              </tr>
+              <tr class="text">
+                <td class="innertxt">Grams</td>
+                <td><div class="innertxt">Kilograms</div></td>
+                <td><div class="innertxt">Ounces</div></td>
+                <td><div class="innertxt">Pounds</div></td>
+                <td><div class="innertxt"> Tons</div></td>
+              </tr>
+              <tr>
+                <td><input type="text" size="10" id="grms" name="grms" class="innertxt"></td>
+                <td><input type="text" size="10" id="kg" name="kg" class="innertxt"></td>
+                <td><input type="text" size="10" id="ounce2" name="ounce" class="innertxt"></td>
+                <td><input type="text" size="10" id="pounds2" name="pounds" class="innertxt"></td>
+                <td><input type="text" size="10" id="ltons2" name="ltons" class="innertxt"></td>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <div align="center" class="buttonGrp">
+                      <input type="button" onclick="calWeight()" value="Calculate" name="Submit3222" class="buttn">
+                      <input type="reset" value="Clear" name="Submit22222" class="buttn">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+            
+        <form id="frm3" name="frm3">
+          <table width="100%" cellspacing="0" cellpadding="2" border="0">
+            <tbody>
+              <tr>
+                <td class="text" colspan="5"><strong class="head_styl">Liquid Volume Converter</strong></td>
+              </tr>
+              <tr class="text">
+                <td><div class="innertxt">Litre</div></td>
+                <td><div class="innertxt">Fluid 
+                  Ounces</div></td>
+                <td><div class="innertxt">Quarts</div></td>
+                <td><div class="innertxt">Gallons</div></td>
+                <td><div class="innertxt">Imperial Gallons</div></td>
+              </tr>
+              <tr>
+                <td><input type="text" size="10" id="ltr" name="ltr" class="innertxt"></td>
+                <td><input type="text" size="10" id="founce" name="founce" class="innertxt"></td>
+                <td><input type="text" size="10" id="quarts" name="quarts" class="innertxt"></td>
+                <td><input type="text" size="10" id="gallons" name="gallons" class="innertxt"></td>
+                <td><input type="text" size="10" id="impgallons" name="impgallons" class="innertxt"></td>
+              </tr>
+              <tr>
+                <td colspan="8">
+                  <div align="center" class="buttonGrp">
+                      <input type="button" onclick="calLiquid()" value="Calculate" name="Submit3222" class="buttn">
+                      <input type="reset" value="Clear" name="Submit22222" class="buttn">
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+
+        <form id="frm4" name="frm4">
+          <table width="100%" cellspacing="0" cellpadding="2" border="0">
+            <tbody>
+              <tr>
+                <td class="text" colspan="6"><strong class="head_styl">Cubic 
+                  Meter Converter </strong>
+                </td>
+              </tr>
+              <tr class="text">
+                <td><div class="innertxt">Height</div></td>
+                <td><div class="innertxt">Width</div></td>
+                <td><div class="innertxt">Length</div></td>
+                <td><div class="innertxt">Unit</div></td>
+                <td class="innertxt"><div align="center">Qty.</div></td>
+                <td class="innertxt"><div align="center">Cu. 
+                  Meter</div></td>
+              </tr>
+              <tr>
+                <td><input type="text" size="10" id="h" name="h" class="innertxt"></td>
+                <td><input type="text" size="10" id="w" name="w" class="innertxt"></td>
+                <td><input type="text" size="10" id="l" name="l" class="innertxt"></td>
+                <td><select id="unit" name="unit">
+                    <option selected="selected" value="I">Inch</option>
+                    <option value="C">Centi Meter</option>
+                    <option value="F">Feet</option>
+                    <option value="M">Meter</option>
+                </select></td>
+                <td>
+                <div align="center">
+                    <input type="text" size="10" value="1" id="q" class="newscnt" name="q">
+                </div></td>
+                <td>
+                <div align="center">
+                    <input type="text" size="10" id="cumtr" name="cumtr">
+                </div></td>
+              </tr>
+              <tr>
+           <td colspan="8">
+                      <div align="center" class="buttonGrp">
+                          <input type="button" onclick="calCMeter()" value="Calculate" name="Submit3222" class="buttn">
+                          <input type="reset" value="Clear" name="Submit22222" class="buttn">
+                      </div>
+                      </td>
+              </tr>
+            </tbody></table>
+        </form>
       </div>
     </section>
 
@@ -264,6 +267,8 @@
         $(".selectpicker").selectpicker();
       });
 
+      
+      
       function calDistance(){
 //alert(document.frm1.mtr.value + "");
 //frm1.mtr.value = isNaN(frm1.mtr.value)
@@ -391,6 +396,250 @@ else if (document.frm1.nmiles.value != ""){
   }
 }
 }
+
+function calWeight(){
+if (document.frm2.kg.value != ""){
+  if (isNaN(document.frm2.kg.value) == false){ 
+    document.frm2.grms.value = document.frm2.kg.value * 1000
+    document.frm2.ounce.value = document.frm2.kg.value * 35.274
+    document.frm2.pounds.value = document.frm2.kg.value * 2.2046
+    /*document.frm2.tpounds.value = document.frm2.kg.value * 2.6793
+    document.frm2.stones.value = document.frm2.kg.value * 0.1378
+    document.frm2.stons.value = document.frm2.kg.value * 0.0011*/
+    document.frm2.ltons.value = document.frm2.kg.value * 0.001
+  }else{
+    alert ("please enter numeric value")
+    document.frm2.kg.value = "";
+  }
+}
+else if (document.frm2.grms.value != ""){
+  if (isNaN(document.frm2.grms.value) == false){ 
+  
+    document.frm2.kg.value = document.frm2.grms.value / 1000
+    
+    
+    document.frm2.pounds.value = document.frm2.kg.value * 2.2046
+    document.frm2.ounce.value = document.frm2.kg.value * 35.274
+    /*document.frm2.tpounds.value = document.frm2.kg.value * 2.6793
+    document.frm2.stones.value = document.frm2.kg.value * 0.1378
+    document.frm2.stons.value = document.frm2.kg.value * 0.0011*/
+    document.frm2.ltons.value = document.frm2.kg.value * 0.001
+  }else{
+    alert ("please enter numeric value")
+    document.frm2.grms.value = "";
+  }
+}
+
+else if (document.frm2.ounce.value != ""){
+  if (isNaN(document.frm2.ounce.value) == false){ 
+    document.frm2.kg.value = document.frm2.ounce.value / 35.274
+    
+    document.frm2.grms.value = document.frm2.kg.value * 1000
+    document.frm2.pounds.value = document.frm2.kg.value * 2.2046
+    /*document.frm2.tpounds.value = document.frm2.kg.value * 2.6793
+    document.frm2.stones.value = document.frm2.kg.value * 0.1378
+    document.frm2.stons.value = document.frm2.kg.value * 0.0011*/
+    document.frm2.ltons.value = document.frm2.kg.value * 0.001
+  }else{
+    alert ("please enter numeric value")
+    document.frm2.ounce.value = "";
+  }
+}
+
+else if (document.frm2.pounds.value != ""){
+  if (isNaN(document.frm2.pounds .value) == false){ 
+    document.frm2.kg.value = document.frm2.pounds.value / 2.2046
+    
+    document.frm2.grms.value = document.frm2.kg.value * 1000
+    document.frm2.ounce.value = document.frm2.kg.value * 35.274
+    /*document.frm2.tpounds.value = document.frm2.kg.value * 2.6793
+    document.frm2.stones.value = document.frm2.kg.value * 0.1378
+    document.frm2.stons.value = document.frm2.kg.value * 0.0011*/
+    document.frm2.ltons.value = document.frm2.kg.value * 0.001
+  }else{
+    alert ("please enter numeric value")
+    document.frm2.pounds.value = "";
+  }
+}
+
+/*else if (document.frm2.tpounds.value != ""){
+  if (isNaN(document.frm2.tpounds .value) == false){ 
+    document.frm2.kg.value = document.frm2.tpounds.value / 2.6793
+    
+    
+    document.frm2.ounce.value = document.frm2.kg.value * 35.274
+    document.frm2.pounds.value = document.frm2.kg.value * 2.2046 
+
+    document.frm2.stones.value = document.frm2.kg.value * 0.1378
+
+
+
+    document.frm2.stons.value = document.frm2.kg.value * 0.0011
+    document.frm2.ltons.value = document.frm2.kg.value * 0.001
+  }else{
+    alert ("please enter numeric value")
+    document.frm2.tpounds.value = "";
+  }
+}
+
+else if (document.frm2.stones.value != ""){
+  if (isNaN(document.frm2.stones .value) == false){ 
+    document.frm2.kg.value = document.frm2.stones.value / 0.1378
+    
+    
+    document.frm2.ounce.value = document.frm2.kg.value * 35.274
+    document.frm2.pounds.value = document.frm2.kg.value * 2.2046 
+    document.frm2.tpounds.value = document.frm2.kg.value * 2.6793
+    document.frm2.stons.value = document.frm2.kg.value * 0.0011
+    document.frm2.ltons.value = document.frm2.kg.value * 0.001
+  }else{
+    alert ("please enter numeric value")
+    document.frm2.stones.value = "";
+  }
+}
+
+else if (document.frm2.stons.value != ""){
+  if (isNaN(document.frm2.stons .value) == false){ 
+    document.frm2.kg.value = document.frm2.stons.value / 0.0011
+    
+    
+    document.frm2.ounce.value = document.frm2.kg.value * 35.274
+    document.frm2.pounds.value = document.frm2.kg.value * 2.2046 
+    document.frm2.tpounds.value = document.frm2.kg.value * 2.6793
+    document.frm2.stones.value = document.frm2.kg.value * 0.1378 
+    document.frm2.ltons.value = document.frm2.kg.value * 0.001
+  }else{
+    alert ("please enter numeric value")
+    document.frm2.stons.value = "";
+  }
+}
+*/
+else if (document.frm2.ltons.value != ""){
+  if (isNaN(document.frm2.ltons .value) == false){ 
+    document.frm2.kg.value = document.frm2.ltons.value / 0.001
+    
+    document.frm2.grms.value = document.frm2.kg.value * 1000
+    document.frm2.ounce.value = document.frm2.kg.value * 35.274
+    document.frm2.pounds.value = document.frm2.kg.value * 2.2046 
+    /*document.frm2.tpounds.value = document.frm2.kg.value * 2.6793
+    document.frm2.stones.value = document.frm2.kg.value * 0.1378 
+    document.frm2.stons.value = document.frm2.kg.value * 0.0011 */
+  }else{
+    alert ("please enter numeric value")
+    document.frm2.ltons.value = "";
+  }
+}
+
+}
+
+
+function calLiquid(){
+if (document.frm3.ltr.value != ""){
+  if (isNaN(document.frm3.ltr.value) == false){ 
+    document.frm3.founce.value = document.frm3.ltr.value * 33.824
+    document.frm3.quarts.value = document.frm3.ltr.value * 1.057
+    document.frm3.gallons.value = document.frm3.ltr.value * 0.2642
+    document.frm3.impgallons.value = document.frm3.ltr.value * 0.22
+  }else{
+    alert ("please enter numeric value")
+    document.frm3.ltr.value = "";
+  }
+}
+else if (document.frm3.founce.value != ""){
+  if (isNaN(document.frm3.founce.value) == false){ 
+    document.frm3.ltr.value = document.frm3.founce.value / 33.824
+    
+    
+    document.frm3.quarts.value = document.frm3.ltr.value * 1.057
+    document.frm3.gallons.value = document.frm3.ltr.value * 0.2642
+    document.frm3.impgallons.value = document.frm3.ltr.value * 0.22
+  }else{
+    alert ("please enter numeric value")
+    document.frm3.founce.value = "";
+  }
+}
+
+else if (document.frm3.quarts.value != ""){
+  if (isNaN(document.frm3.quarts.value) == false){ 
+    document.frm3.ltr.value = document.frm3.quarts.value / 1.057
+    
+    document.frm3.founce.value = document.frm3.ltr.value * 33.824 
+    document.frm3.gallons.value = document.frm3.ltr.value * 0.2642
+    document.frm3.impgallons.value = document.frm3.ltr.value * 0.22
+  }else{
+    alert ("please enter numeric value")
+    document.frm3.quarts.value = "";
+  }
+}
+
+else if (document.frm3.gallons.value != ""){
+  if (isNaN(document.frm3.gallons.value) == false){ 
+    document.frm3.ltr.value = document.frm3.gallons.value / 0.2642
+    
+    document.frm3.founce.value = document.frm3.ltr.value * 33.824 
+    document.frm3.quarts.value = document.frm3.ltr.value * 1.057
+    document.frm3.impgallons.value = document.frm3.ltr.value * 0.22
+  }else{
+    alert ("please enter numeric value")
+    document.frm3.gallons.value = "";
+  }
+}
+
+else if (document.frm3.impgallons.value != ""){
+  if (isNaN(document.frm3.impgallons.value) == false){ 
+    document.frm3.ltr.value = document.frm3.impgallons.value / 0.22
+    
+    document.frm3.founce.value = document.frm3.ltr.value * 33.824 
+    document.frm3.quarts.value = document.frm3.ltr.value * 1.057
+    document.frm3.gallons.value = document.frm3.ltr.value * 0.2642 
+  }else{
+    alert ("please enter numeric value")
+    document.frm3.impgallons.value = "";
+  }
+}
+
+}
+
+function calCMeter(){
+//alert(document.frm4.unit.value);
+if (document.frm4.h.value != "" && document.frm4.w.value != "" && document.frm4.l.value != "" && document.frm4.q.value != ""){
+  if (isNaN(document.frm4.h.value) == false && isNaN(document.frm4.w.value) == false && isNaN(document.frm4.l.value) == false && isNaN(document.frm4.q.value) == false){ 
+  q = document.frm4.q.value
+    if (document.frm4.unit.value == "I"){
+      mh = document.frm4.h.value * 0.0254
+      mw = document.frm4.w.value * 0.0254
+      ml = document.frm4.l.value * 0.0254
+      
+    }
+    if (document.frm4.unit.value == "F") {
+      mh = ((document.frm4.h.value) * 12 * 0.0254)
+      mw = ((document.frm4.w.value) * 12 * 0.0254)
+      ml = ((document.frm4.l.value) * 12 * 0.0254)
+
+    }
+    if (document.frm4.unit.value == "C"){
+      mh = document.frm4.h.value / 100
+      mw = document.frm4.w.value / 100
+      ml = document.frm4.l.value / 100
+    }
+    if (document.frm4.unit.value == "M"){
+      mh = document.frm4.h.value
+      mw = document.frm4.w.value
+      ml = document.frm4.l.value
+    }
+    //alert(mh + "," + mw + "," + ml);
+    document.frm4.cumtr.value = (mh * mw * ml * q)
+    
+  }
+  else
+  {
+    alert ("please enter numeric value")
+
+  }
+}
+
+}
+
 
     </script>
   </body>
