@@ -137,14 +137,14 @@ class MyHeader extends HTMLElement{
                             <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
                                       <ul class="mobileLinks">
-                                        <li><a href="" data-src="images/Services/Customs Clearance.png">Customs Clearing</a></li>
-                                        <li><a href="" data-src="images/Services/Freight Forwarding.png">Freight Forwarding</a></li>
-                                        <li><a href="" data-src="images/Services/Warehousing _ 3PL.png">Warehousing & 3PL</a></li>
-                                        <li><a href="" data-src="images/Services/First-time Exim.png">First-Time Exim</a></li>
-                                        <li><a href="" data-src="images/Services/Container Freight Station (CFS).png">Container Freight Station (CFS)</a></li>
-                                        <li><a href="" data-src="images/Services/Transportation.png">Transportation</a></li>
-                                        <li><a href="" data-src="images/Services/Customs Advisory.png">Custom Advisory</a></li>
-                                        <li><a href="" data-src="images/Services/Insurance _ Licensing.png">Insurance & Licensing</a></li>
+                                      <li><a href="customclearance.html" data-src="images/Services/Customs Clearance.png">Customs Clearing</a></li>
+                                      <li><a href="freightforwarding.html" data-src="images/Services/Freight Forwarding.png">Freight Forwarding</a></li>
+                                      <li><a href="warehouseing.html" data-src="images/Services/Warehousing _ 3PL.png">Warehousing & 3PL</a></li>
+                                      <li><a href="firsttimeexim.html" data-src="images/Services/First-time Exim.png">First-Time Exim</a></li>
+                                      <li><a href="cfs.html" data-src="images/Services/Container Freight Station (CFS).png">Container Freight Station (CFS)</a></li>
+                                      <li><a href="transportation.html" data-src="images/Services/Transportation.png">Transportation</a></li>
+                                      <li><a href="customadvisor.html" data-src="images/Services/Customs Advisory.png">Custom Advisory</a></li>
+                                      <li><a href="insurancelicensing.html" data-src="images/Services/Insurance _ Licensing.png">Insurance & Licensing</a></li>
                                       </ul>
                                 </div>
                             </div>
@@ -161,12 +161,12 @@ class MyHeader extends HTMLElement{
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
                                     <ul>
-                                        <li><a href="" data-src="images/About/Overview.png">Overview</a></li>
-                                        <li><a href="" data-src="images/About/Industry Affiliations.png">Industry Affiliations</a></li>
-                                        <li><a href="" data-src="images/About/Service Model.png">Service Model</a></li>
-                                        <li><a href="" data-src="images/About/Leadership Team.png">Leadership Team</a></li>
-                                        <li><a href="" data-src="images/About/Case Studies.png">Case Studies</a></li>
-                                        <li><a href="" data-src="images/About/Customer Testimonials.png">Customer Testimonials</a></li>
+                                    <li><a href="overview.html" data-src="images/About/Overview.png">Overview</a></li>
+                                    <li><a href="industryaffiliations.html" data-src="images/About/Industry Affiliations.png">Industry Affiliations</a></li>
+                                    <li><a href="servicemodel" data-src="images/About/Service Model.png">Service Model</a></li>
+                                    <li><a href="team.html" data-src="images/About/Leadership Team.png">Leadership Team</a></li>
+                                    <li><a href="casestudies.html" data-src="images/About/Case Studies.png">Case Studies</a></li>
+                                    <li><a href="testimonials.html" data-src="images/About/Customer Testimonials.png">Customer Testimonials</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -183,13 +183,13 @@ class MyHeader extends HTMLElement{
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
                                     <ul>
-                                        <li><a href="" data-src="images/Industries/Automobiles.png">Automobiles</a></li>
-                                        <li><a href="" data-src="images/Industries/Chemicals.png">Chemicals</a></li>
-                                        <li><a href="" data-src="images/Industries/exporters.png">First time exporter</a></li>
-                                        <li><a href="" data-src="images/Industries/Logistics Companies.png">Logistics Companies</a></li>
-                                        <li><a href="" data-src="images/Industries/Manufacturing.png">Manufacturing</a></li>
-                                        <li><a href="" data-src="images/Industries/Pharma.png">Pharma</a></li>
-                                        <li><a href="" data-src="images/Industries/Textiles.png">Textiles</a></li>
+                                    <li><a href="automobiles.html" data-src="images/Industries/Automobiles.png">Automobiles</a></li>
+                                    <li><a href="chemicals.html" data-src="images/Industries/Chemicals.png">Chemicals</a></li>
+                                    <li><a href="firsttimeexporter.html" data-src="images/Industries/exporters.png">First time exporter</a></li>
+                                    <li><a href="logisticscompanies.html" data-src="images/Industries/Logistics Companies.png">Logistics Companies</a></li>
+                                    <li><a href="manufacturing.html" data-src="images/Industries/Manufacturing.png">Manufacturing</a></li>
+                                    <li><a href="pharma.html" data-src="images/Industries/Pharma.png">Pharma</a></li>
+                                    <li><a href="textiles.html" data-src="images/Industries/Textiles.png">Textiles</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -224,12 +224,12 @@ class MyHeader extends HTMLElement{
                             <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
                                 <div class="panel-body">
                                     <ul>
-                                        <li><a href="" data-src="images/Resources/Exchange Rates.png">Exchange Rates</a></li>
-                                        <li><a href="" data-src="images/Resources/Container Dimensions.png">Container Dimensions</a></li>
-                                        <li><a href="" data-src="images/Resources/Conversion.png">Conversion</a></li>
-                                        <li><a href="" data-src="images/Resources/Tracking.png">Tracking</a></li>
-                                        <li><a href="" data-src="images/Resources/Incoterms.png">Incoterms</a></li>
-                                        <li><a href="" data-src="images/Resources/Documents Download.png">Documents Download</a></li>
+                                    <li><a href="exchange.html" data-src="images/Resources/Exchange Rates.png">Exchange Rates</a></li>
+                                    <li><a href="dimensions.html" data-src="images/Resources/Container Dimensions.png">Container Dimensions</a></li>
+                                    <li><a href="conversion.html" data-src="images/Resources/Conversion.png">Conversion</a></li>
+                                    <li><a href="tracking.html" data-src="images/Resources/Tracking.png">Tracking</a></li>
+                                    <li><a href="incoterms.html" data-src="images/Resources/Incoterms.png">Incoterms</a></li>
+                                    <li><a href="downloads.html" data-src="images/Resources/Documents Download.png">Documents Download</a></li>
                                     </ul>
                                 </div>
                             </div>
