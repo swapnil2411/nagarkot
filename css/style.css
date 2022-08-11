@@ -207,7 +207,8 @@ table {
 .client_testimonial_section .cilents_area,
 .floating_contact_area,
 .floating_contact_area .contact_button,
-.floating_contact_area .floating_contact_form .form-element button{
+.floating_contact_area .floating_contact_form .form-element button,
+.client_testimonial_slider_section .client_said_area{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -229,6 +230,10 @@ table {
     z-index: 5;
 }
 
+.navbar_area.bgChange{
+    background: #fff;
+}
+
 .navbar_area .rigt_navbar{
     -webkit-align-items: center;
     -webkit-box-align: center;
@@ -244,9 +249,14 @@ table {
 .navbar_area .rigt_navbar nav.desktop-navbar ul li a{
     font-size: 14px;
     text-decoration: none;
-    color: #000;
+    /* color: #000; */
+    color: #fff;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.navbar_area .rigt_navbar nav.desktop-navbar ul li a.menulinksColor{
+    color: #000;
 }
 
 .navbar_area .rigt_navbar nav.desktop-navbar ul li a:hover{
@@ -1883,10 +1893,22 @@ marquee span {
     -webkit-box-align: center;
     align-items: center;
     margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.global_map_with_logo .global_mapping {
+    flex: 0 0 85%;
+    max-width: 85%;
 }
 
 .global_map_with_logo .freight_forward_logos{
     text-align: center;
+    flex: 0 0 15%;
+    max-width: 15%;
+}
+
+.global_map_with_logo .freight_forward_logos .logo_freight_for:not(:last-child){
+    margin-bottom: 20px;
 }
 
 .global_map_with_logo .freight_forward_logos img:not(:last-child){
@@ -3792,3 +3814,121 @@ marquee span {
   .comparisonTable table tr td input[type='reset']{
     color: #c40404;
   }
+
+  /* Index Page Testimonial */
+  .client_testimonial_slider_section{
+    background: #002344;
+  }
+
+  .client_testimonial_slider_section .client_said_area {
+    flex-wrap: wrap;
+  }
+
+  .client_testimonial_slider_section .client_said_area .section_header{
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .client_testimonial_slider_section .client_said_area .section_header .title{
+    color: #fff;
+  }
+
+  .client_testimonial_slider_section .client_said_area .testimonial_slider{
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .client_testimonial_slider_section .swiper-horizontal-3d{
+    padding-bottom: 70px;
+  }
+
+  .testimonial_content{
+    border: 1px solid #e6e6e6;
+    background: #fff;
+  }
+
+  .testimonial_content svg{
+    display: none;
+  }
+
+  .swiper-slide{
+    background: #fff;
+    opacity: 0.5;
+  }
+
+  .swiper-slide .client_para{
+    padding: 30px 30px 10px;
+  }
+
+  .swiper-slide .author{
+    padding: 10px 20px;
+    background: #F5F5F5;
+    color: #c40404;
+  }
+
+  .swiper-slide .client_para svg{
+    display: none;
+  }
+
+  .swiper-slide .client_para img{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .swiper-slide .client_para strong,
+  .swiper-slide .author strong{
+    font-weight: 600;
+  }
+
+  .swiper-slide.swiper-slide-active{
+    opacity: 1;
+  }
+
+  .swiper-slide.swiper-slide-active .client_para svg{
+    display: block;
+    font-size: 30px;
+    color: #c40404;
+    margin-bottom: 10px;
+  }
+
+  .swiper-slide.swiper-slide-active .client_para {
+    padding: 30px 45px 10px;
+  }
+
+  .swiper-slide.swiper-slide-active .author{
+    padding: 10px 45px;
+    background: #F5F5F5;
+  }
+
+  .swiper-horizontal-3d .swiper-wrapper{
+    align-items: center;
+  }
+
+  .swiper-horizontal-3d .swiper-slide.swiper-slide-prev{
+    transform: translate3d(180px, 0px, -150px) rotateX(0deg) rotateY(0deg) scale(1) !important;
+  }
+
+  .swiper-horizontal-3d .swiper-slide.swiper-slide-next{
+    transform: translate3d(-180px, 0px, -150px) rotateX(0deg) rotateY(0deg) scale(1) !important;
+  }
+
+  .client_testimonial_slider_section .swiper-pagination{
+    bottom: 30px;
+  }
+
+  .client_testimonial_slider_section .swiper-pagination .swiper-pagination-bullet{
+    width: 45px;
+    height: 5px;
+    border-radius: 0;
+    background: #fff;
+  }
+
+  .client_testimonial_slider_section .swiper-pagination .swiper-pagination-bullet-active{
+    background: #c40404;
+  }
+  
+
+  /* .swiper-slide.swiper-slide-active{
+    width: 400px;
+  } */

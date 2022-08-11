@@ -57,7 +57,8 @@
     .freigt_forwarding_content .inner_content .freight_content h3,
     .custom_advisor_content .inner_content .custom_advisor_content h3,
     .container_dimensions_section .panel-title > a span,
-    .location_box .location_content .location_info .location_name{
+    .location_box .location_content .location_info .location_name,
+    .cfs_content .inner_content .cfs_content h3{
         font-size: 32px !important;
     }
 
@@ -184,7 +185,8 @@
     .freigt_forwarding_content .inner_content .freight_content h3,
     .custom_advisor_content .inner_content .custom_advisor_content h3,
     .container_dimensions_section .panel-title > a span,
-    .location_box .location_content .location_info .location_name{
+    .location_box .location_content .location_info .location_name,
+    .cfs_content .inner_content .cfs_content h3{
         font-size: 30px !important;
         line-height: 36px !important;
     }
@@ -398,6 +400,16 @@
       .whatWeSayInner .whatWeSayInnerRight p {
         padding: 0 60px 20px 30px;
       }
+
+      .client_testimonial_slider_section .client_said_area .section_header,
+      .client_testimonial_slider_section .client_said_area .testimonial_slider{
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .client_testimonial_slider_section .client_said_area .testimonial_slider{
+        margin-top: 50px;
+      }
 }
 
 @media (max-width: 991px){
@@ -491,7 +503,8 @@
     .freigt_forwarding_content .inner_content .freight_content h3,
     .custom_advisor_content .inner_content .custom_advisor_content h3,
     .container_dimensions_section .panel-title > a span,
-    .location_box .location_content .location_info .location_name{
+    .location_box .location_content .location_info .location_name,
+    .cfs_content .inner_content .cfs_content h3{
         font-size: 26px !important;
         line-height: 32px !important;
     }
@@ -1118,8 +1131,13 @@
 
     .custom_clearance_content .inner_content,
     .freigt_forwarding_content .inner_content,
-    .custom_advisor_content .inner_content{
+    .custom_advisor_content .inner_content,
+    .cfs_content .inner_content{
         padding: 40px 0px;
+      }
+
+      .cfs_content .inner_content{
+        flex-direction: column-reverse;
       }
 
       .custom_clearance_content .inner_content .custom_clearance_img,
@@ -1127,20 +1145,28 @@
       .freigt_forwarding_content .inner_content .freight_img,
       .freigt_forwarding_content .inner_content .freight_content,
       .custom_advisor_content .inner_content .custom_advisor_img,
-      .custom_advisor_content .inner_content .custom_advisor_content{
+      .custom_advisor_content .inner_content .custom_advisor_content,
+      .cfs_content .inner_content .cfs_content,
+      .cfs_content .inner_content .cfs_img{
         flex: 0 0 100%;
         max-width: 100%;
       }
 
+      .cfs_content .inner_content .cfs_content{
+        padding-right: 0;
+      }
+
       .custom_clearance_content .inner_content .custom_clearance_img,
       .freigt_forwarding_content .inner_content .freight_img,
-      .custom_advisor_content .inner_content .custom_advisor_img{
+      .custom_advisor_content .inner_content .custom_advisor_img,
+      .cfs_content .inner_content .cfs_img{
         text-align: center;
       }
 
       .custom_clearance_content .inner_content .custom_clearance_content,
       .freigt_forwarding_content .inner_content .freight_content,
-      .custom_advisor_content .inner_content .custom_advisor_content{
+      .custom_advisor_content .inner_content .custom_advisor_content,
+      .cfs_content .inner_content .cfs_content{
         padding-left: 0;
         margin-top: 20px;
       }
@@ -1454,6 +1480,30 @@
     font-size: 25px;
     line-height: 28px;
   }
+   .global_map_with_logo .global_mapping,
+.global_map_with_logo .freight_forward_logos{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.global_map_with_logo .freight_forward_logos{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.global_map_with_logo .freight_forward_logos .logo_freight_for{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.global_map_with_logo .freight_forward_logos .logo_freight_for{
+    margin-bottom: 20px;
+}
 }
 
 @media (max-width: 640px){
@@ -1513,7 +1563,8 @@
     .freigt_forwarding_content .inner_content .freight_content h3,
     .custom_advisor_content .inner_content .custom_advisor_content h3,
     .container_dimensions_section .panel-title > a span,
-    .location_box .location_content .location_info .location_name{
+    .location_box .location_content .location_info .location_name,
+    .cfs_content .inner_content .cfs_content h3{
         font-size: 24px !important;
         line-height: 30px !important;
     }
@@ -1595,7 +1646,8 @@
         line-height: 24px;
       }
 
-      .custom_clearance_services .custom_clearance_service_listing{
+      .custom_clearance_services .custom_clearance_service_listing,
+      .freight_services .freight_service_listing{
         padding: 0;
       }
 
@@ -1781,6 +1833,10 @@
       .industry .industryBox:not(:nth-child(2n)){
         border-right: 1px solid #d4d4d4;
       }
+
+      .owl-item.center{
+        width: 300px !important;
+      }
 }
 
 @media (max-width: 480px){
@@ -1955,5 +2011,9 @@
 
     .custInnerCareerArea label {
         width: 170px;
+      }
+
+      .global_map_with_logo .freight_forward_logos .logo_freight_for{
+        padding: 0 5px;
       }
 }

@@ -12,6 +12,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Swiper Css -->
     <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Owl Carousle -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <!-- Custom Css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -494,14 +496,61 @@
     <!-- Pharma Section End Here -->
 
     <!-- Client Testimonial Start Here -->
-    <!-- <section class="client_testimonial_section">
+    
+    <section class="client_testimonial_slider_section plr pt">
         <div class="client_said_area">
             <div class="section_header">
                 <h2 class="title">What they said about us</h2>
             </div>
-            
+            <div class="testimonial_slider">
+                <div class="swiper swiper-horizontal-3d">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <p class="client_para body_typography_medium">
+                            <img src="images/icon/red_arc.png" class="img-fluid" alt="Red Arc Image"/>
+                            <span class="iconify" data-icon="bxs:quote-left"></span>
+                            Dear Nagarkot Team, We really appreciate your efforts and support during this TOPMOST PRIORITY SHIPMENT. Clearance done for GSIN#830 and GSIN#1010 is a <strong>RECORD TIME CLEARANCE.</strong><br>
+                            We always remember DAY 24 JAN 2013 as <strong>"NAGARKOT CLEARANCE DAY"</strong>.<br>
+                            Special Thanks to <strong>Mr. Sanjay Agarwal Sir</strong> for your personal attention at every point to get things done smoothly.
+                        </p>
+                        <p class="author body_typography_medium">
+                            - Sachin Tahsildar, Global Sourcing,<br>
+                            <strong>Mahindra TwoWheelers</strong>
+                        </p>
+                      </div>
+                      <div class="swiper-slide">
+                        <p class="client_para body_typography_medium">
+                            <img src="images/icon/red_arc.png" class="img-fluid" alt="Red Arc Image"/>
+                            <span class="iconify" data-icon="bxs:quote-left"></span>
+                            Dear Nagarkot Team, We really appreciate your efforts and support during this TOPMOST PRIORITY SHIPMENT. Clearance done for GSIN#830 and GSIN#1010 is a <strong>RECORD TIME CLEARANCE.</strong><br>
+                            We always remember DAY 24 JAN 2013 as <strong>"NAGARKOT CLEARANCE DAY"</strong>.<br>
+                            Special Thanks to <strong>Mr. Sanjay Agarwal Sir</strong> for your personal attention at every point to get things done smoothly.
+                        </p>
+                        <p class="author body_typography_medium">
+                            - Sachin Tahsildar, Global Sourcing,<br>
+                            <strong>Mahindra TwoWheelers</strong>
+                        </p>
+                      </div>
+                      <div class="swiper-slide">
+                        <p class="client_para body_typography_medium">
+                            <img src="images/icon/red_arc.png" class="img-fluid" alt="Red Arc Image"/>
+                            <span class="iconify" data-icon="bxs:quote-left"></span>
+                            Dear Nagarkot Team, We really appreciate your efforts and support during this TOPMOST PRIORITY SHIPMENT. Clearance done for GSIN#830 and GSIN#1010 is a <strong>RECORD TIME CLEARANCE.</strong><br>
+                            We always remember DAY 24 JAN 2013 as <strong>"NAGARKOT CLEARANCE DAY"</strong>.<br>
+                            Special Thanks to <strong>Mr. Sanjay Agarwal Sir</strong> for your personal attention at every point to get things done smoothly.
+                        </p>
+                        <p class="author body_typography_medium">
+                            - Sachin Tahsildar, Global Sourcing,<br>
+                            <strong>Mahindra TwoWheelers</strong>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                
+            </div>
         </div>
-    </section> -->
+    </section>
     <!-- Client Testimonial End Here -->
 
     <!-- Blog Section Start Here -->
@@ -657,6 +706,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
     <script src="js/main.js"></script>
     <script>
         function googleTranslateElementInit() {
@@ -678,10 +729,49 @@
             $('.selectpicker').selectpicker();
         });
 
-        
+    //     $('#testimonial_slider').owlCarousel({
+    //         loop:true,
+    //         margin:0,
+    //         nav:false,
+    //         dots: true,
+    //         center: true,
+    //         autoplay: true,
+    //         autoplaySpeed: 3000,
+    //         onDragged: callback,
+    //         responsive:{
+    //             0:{
+    //                 items:1
+    //             },
+    //             767:{
+    //                 items:3
+    //             }
+    //         },
+    //     });
 
+    //     $(".center").next().addClass("next-item");
+    //     $(".center").prev().addClass("prev-item");
+
+    //     $(".center").nextAll().eq(1).addClass("next");
+    //     $(".center").prevAll().eq(1).addClass("next");
         
+    //     $(".center").nextAll().eq(2).addClass("last");
+    //     $(".center").prevAll().eq(2).addClass("last");
+            
+    //     function callback(event) {
+    
+    //     $(".owl-item").removeClass("next-item");
+    //     $(".owl-item").removeClass("prev-item");
+    //     $(".owl-item").removeClass("next");
+    //     $(".owl-item").removeClass("last");
         
+    //     $(".center").next().addClass("next-item");
+    //     $(".center").prev().addClass("prev-item");
+    //     $(".center").nextAll().eq(1).addClass("next");
+    //     $(".center").prevAll().eq(1).addClass("next");
+    
+    //     $(".center").nextAll().eq(2).addClass("last");
+    //     $(".center").prevAll().eq(2).addClass("last");
+    // }
     </script>
 </body>
 </html>
