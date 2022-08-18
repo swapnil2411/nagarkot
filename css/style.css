@@ -121,7 +121,7 @@ table {
     position: absolute;
     height: 100%;
     width: 4px;
-    background: #d42427;
+    background: #c40404;
     left: 0;
     top: 0;
     display: block;
@@ -208,7 +208,8 @@ table {
 .floating_contact_area,
 .floating_contact_area .contact_button,
 .floating_contact_area .floating_contact_form .form-element button,
-.client_testimonial_slider_section .client_said_area{
+.client_testimonial_slider_section .client_said_area,
+.custDrop .btn_custom{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -253,6 +254,10 @@ table {
     color: #fff;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.navbar_area .rigt_navbar nav.desktop-navbar .menu_dropdown ul li a{
+  color: #000;
 }
 
 .navbar_area .rigt_navbar nav.desktop-navbar ul li a.menulinksColor{
@@ -326,7 +331,7 @@ table {
 }
 
 .menu_dropdown ul li a:hover{
-    color: #d42427 !important;
+    color: #c40404 !important;
     font-weight: 600 !important;
 }
 
@@ -365,7 +370,7 @@ table {
 }
 
 .appointment_btn a{
-    background: #d42427;
+    background: #c40404;
     padding: 10px 20px;
     border-radius: 100px;
 }
@@ -442,7 +447,7 @@ table {
 
 .hamburger svg{
     font-size: 36px;
-    color: #d42427;
+    color: #c40404;
 }
 
 .mobile_navbar{
@@ -474,7 +479,7 @@ table {
 }
 
 .mobile_navbar::-webkit-scrollbar-thumb{
-    background: #d42427;
+    background: #c40404;
 }
 
 .closeMenu{
@@ -483,7 +488,7 @@ table {
 
 .closeMenu span{
     padding: 8px 12px;
-    background: #d42427;
+    background: #c40404;
     color: #fff;
     border-radius: 100px;
     font-size: 14px;
@@ -544,7 +549,7 @@ table {
 }
 
 .panel-body ul li a:hover{
-    color: #d42427;
+    color: #c40404;
     font-weight: 600;
 }
 
@@ -552,7 +557,7 @@ table {
     height: 50px;
     width: 50px;
     /* background: #00A0DB; */
-    background: #d42427;
+    background: #c40404;
     color: #fff;
     -webkit-justify-content: center;
     -webkit-box-pack: center;
@@ -692,7 +697,7 @@ table {
 }
 
 .footer_company_info .footer_column ul li a:hover{
-    color: #d42427;
+    color: #c40404;
 }
 
 .footer_other_link{
@@ -812,7 +817,7 @@ table {
 .footer_arc{
     position: absolute;
     left: 0;
-    bottom: -35px;
+    bottom: -25px;
     z-index: -1;
 }
 
@@ -978,7 +983,7 @@ table {
   }
 
   .banner_area .slider_content .slide_outerbox{
-    background: #d42427;
+    background: #c40404;
   }
 
   .banner_area .slider_content .slide_outerbox .slide_innerbox{
@@ -1135,7 +1140,7 @@ marquee span {
 .marqueeOne span{
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #d42427;
+    -webkit-text-stroke-color: #c40404;
 }
 
 .marqueeTwo span{
@@ -1582,7 +1587,7 @@ marquee span {
 }
 
 .blog_section .blog_area .blog_column .blog_content a:hover{
-    color: #d42427;
+    color: #c40404;
 }
 
 .blog_section .blog_area .blog_column .blog_img img{
@@ -1599,8 +1604,8 @@ marquee span {
 /* Downloads Page Css */
 .page_header{
     background-image: url('../images/download_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     padding: 135px 0 40px 180px;
 }
 
@@ -2302,7 +2307,7 @@ marquee span {
     position: absolute;
     height: 100%;
     width: 4px;
-    background: #d42427;
+    background: #c40404;
     left: -50px;
     top: 0;
     display: block;
@@ -2441,7 +2446,7 @@ marquee span {
     position: absolute;
     height: 100%;
     width: 4px;
-    background: #d42427;
+    background: #c40404;
     left: -50px;
     top: 0;
     display: block;
@@ -2647,6 +2652,10 @@ marquee span {
 }
 
 /* Teams Area */
+.leadership_team_area{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
 
 .leadership_team_area .leadership_content{
     flex-wrap: wrap;
@@ -2871,8 +2880,10 @@ marquee span {
     padding-top: 60px;
   }
   .contactDetails .innerContactDetailsLeft {
-    flex: 0 0 20%;
-    max-width: 20%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    border-right: 1px solid #000;
+    padding-right: 10px;
   }
   .contactDetails .innerContactDetails h1 {
     margin: 10px 0 16px 0;
@@ -2886,16 +2897,17 @@ marquee span {
   .contactDetails .innerContactDetails .red {
     color: #c40404;
   }
-  .innerMidBorder {
+  /* .innerMidBorder {
     flex: 0 0 10%;
     max-width: 10%;
     transform: rotate(90deg);
     border: 2px solid #000000;
-  }
+  } */
   
   .contactDetails .innerContactDetailsRight {
-    flex: 0 0 70%;
-    max-width: 70%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-left: 60px;
   }
   
   .contactDetails .innerContactDetails h1 span {
@@ -2956,7 +2968,7 @@ marquee span {
     margin-top: 60px;
   }
   .quote_btn a {
-    background: #d42427;
+    background: #c40404;
     padding: 13px 20px;
     text-decoration: none;
   }
@@ -2989,27 +3001,47 @@ marquee span {
   }
   
   .submit_btn .quote_btn {
-    margin-top: 47px;
+    margin-top: 15px;
+    padding-left: 0;
   }
   
   .custDrop {
     margin-top: 40px;
-    padding-left: 30px;
   }
   
-  .btn_custom,
-  .btn_custom:hover,
-  .btn_custom:focus {
+  .custDrop .btn_custom,
+  .custDrop .btn_custom:hover,
+  .custDrop .btn_custom:focus {
     background: #c40404 !important;
     color: #fff !important;
     outline: none;
     width: 190px;
     text-align: left !important;
+    border: none;
+  }
+
+  .custDrop .btn_custom{
+    border-radius: 0;
+    -webkit-justify-content: space-between;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+
+  .custDrop .btn_custom svg{
+    font-size: 28px;
   }
   
   .custDrop .dropdown-menu {
     min-width: 188px !important;
   }
+
+  .custDrop .dropdown-toggle::after{
+    display: none !important;
+  }
+
   .dropdown-menu:hover .btn_custom {
     color: #fff !important;
     border-color: #c40404 !important;
@@ -3031,13 +3063,14 @@ marquee span {
   .innerBlogsMain,
   .innerExchMain {
     background: #ffffff;
-    padding: 90px 40px 0 40px !important;
   }
   
   .blogBorderBox {
     border: 1px solid #ece9e9;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+    margin: 45px 0 20px;
   }
+
   .innerBlogsMain img {
     width: 100%;
   }
@@ -3064,7 +3097,7 @@ marquee span {
   .innerBlogsMain .readMore a {
     color: #c40404;
     text-decoration: none;
-    font-size: 16px;
+    /* font-size: 16px; */
     font-weight: 600;
   }
   .innerExchMain {
@@ -3932,3 +3965,79 @@ marquee span {
   /* .swiper-slide.swiper-slide-active{
     width: 400px;
   } */
+
+
+  /* Inner Page Header Background change */
+  .freight_forwarding_header{
+    background: url('../images/flight_forwarding_bg.png');
+  }
+
+  .warehousing_header{
+    background: url('../images/warehousing_bg.png');
+  }
+
+  .custom_clearance_header{
+    background: url('../images/custome_clearance_bg.png');
+  }
+
+  .custom_advisor_header{
+    background: url('../images/custom_advisor_bg.png');
+  }
+
+  .first_time_exim_header{
+    background: url('../images/firsttimeexim_bg.png');
+  }
+
+  .cfs_header{
+    background: url('../images/cfs_bg.png');
+  }
+
+  .transportation_header{
+    background: url('../images/transportation_bg.png');
+  }
+
+  .insuracelicensing_header{
+    background: url('../images/insurance_licensing_bg.png');
+  }
+
+  .overview_header{
+    background: url('../images/overview_bg.png');
+  }
+
+  .industry_affiliations_header{
+    background: url('../images/industry_affiliation_bg.png');
+  }
+
+  .service_model_header{
+    background: url('../images/service_model.png');
+  }
+
+  .team_header{
+    background: url('../images/team_bg.png');
+  }
+
+  .testimonial_header{
+    background: url('../images/testimonial_bg.png');
+  }
+
+  .contactus_header{
+    background: url('../images/contactus_bg.png');
+  }
+
+  /* Button Hover Effect */
+
+  .service_list .service_column .service_box .service_content .readMoreBtn:hover,
+  .industry_column .industry_box .industry_content .industryReadMore:hover,
+  .social_links li a:hover{
+    /* box-shadow: 1px 1px 2px #e6e6e6; */
+    background: #c40404;
+  }
+
+  .quote_btn button:hover,
+  .inner_page_contact .form-element button:hover{
+    background: #0090C5;
+  }
+
+  .footer_industries_section .industry_column .industry_name a:hover{
+    color: #c40404;
+  }

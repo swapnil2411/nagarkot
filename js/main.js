@@ -13,7 +13,9 @@ $(document).ready(function(){
             <div class="navbar_area">
                 <div class="left_navbar">
                     <div class="logo_area">
-                        <img src="images/Header Logo.png" alt="Nagarkot" class="img-fluid">
+                        <a href="index.html">
+                            <img src="images/Header Logo.png" alt="Nagarkot" class="img-fluid">
+                        </a>
                     </div>
                 </div>
                 <div class="rigt_navbar">
@@ -43,7 +45,7 @@ $(document).ready(function(){
                                     <ul>
                                         <li><a href="overview.html" data-src="images/About/Overview.png">Overview</a></li>
                                         <li><a href="industryaffiliations.html" data-src="images/About/Industry Affiliations.png">Industry Affiliations</a></li>
-                                        <li><a href="servicemodel" data-src="images/About/Service Model.png">Service Model</a></li>
+                                        <li><a href="servicemodel.html" data-src="images/About/Service Model.png">Service Model</a></li>
                                         <li><a href="team.html" data-src="images/About/Leadership Team.png">Leadership Team</a></li>
                                         <li><a href="casestudies.html" data-src="images/About/Case Studies.png">Case Studies</a></li>
                                         <li><a href="testimonials.html" data-src="images/About/Customer Testimonials.png">Customer Testimonials</a></li>

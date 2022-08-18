@@ -839,9 +839,9 @@
       .paragraphWithSpan p {
         font-size: 36px;
       }
-      .innerBlogsMain {
+      /* .innerBlogsMain {
         padding: 70px 15px 0 15px !important;
-      }
+      } */
       .tracking {
         flex-direction: column;
       }
@@ -925,6 +925,10 @@
       }
       .plainText p {
         font-size: 28px;
+      }
+
+      .contactDetails .innerContactDetailsRight{
+        padding-left: 40px;
       }
 }
 
@@ -1351,20 +1355,16 @@
       .input_form {
         padding: 50px 0;
       }
-      .contactDetails {
+      /* .contactDetails {
         flex-direction: column;
         align-items: flex-start;
-      }
-      .contactDetails .innerContactDetailsLeft,
-      .contactDetails .innerContactDetailsRight {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-      .innerMidBorder {
+      } */
+      
+      /* .innerMidBorder {
         flex: 0 0 50%;
         max-width: 50%;
         display: none;
-      }
+      } */
       .howCanIHelp span {
         padding: 0;
       }
@@ -1504,11 +1504,36 @@
 .global_map_with_logo .freight_forward_logos .logo_freight_for{
     margin-bottom: 20px;
 }
+
+.blogBorderBox{
+    margin: 25px 0 0;
+}
 }
 
 @media (max-width: 640px){
     .quote_section .quote_form {
         width: 100%;
+    }
+
+    .contactDetails {
+        flex-direction: column;
+        align-items: flex-start;
+      } 
+
+    .contactDetails .innerContactDetailsLeft,
+      .contactDetails .innerContactDetailsRight {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contactDetails .innerContactDetailsLeft{
+        padding-right: 0;
+        border-right: none;
+    }
+
+    .contactDetails .innerContactDetailsRight{
+        padding-left: 0;
+        margin-top: 10px;
     }
 }
 
