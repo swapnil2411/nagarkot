@@ -4028,6 +4028,7 @@ marquee span {
 
   .service_list .service_column .service_box .service_content .readMoreBtn:hover,
   .industry_column .industry_box .industry_content .industryReadMore:hover,
+  
   .social_links li a:hover{
     /* box-shadow: 1px 1px 2px #e6e6e6; */
     background: #c40404;
