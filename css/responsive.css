@@ -4,6 +4,7 @@
         left: unset;
         right: calc(100% + 10px);
     }
+    
 }
 
 @media (min-width: 768px) and (max-width: 1199px){
@@ -410,6 +411,10 @@
       .client_testimonial_slider_section .client_said_area .testimonial_slider{
         margin-top: 50px;
       }
+
+      .case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column .case_studies_group_listing .title a{
+        font-size: 20px;
+      }
 }
 
 @media (max-width: 991px){
@@ -768,6 +773,8 @@
       .location_box .location_content .location_info .location_inner_content .description{
         margin-top: 15px;
       }
+
+      
 
     .footer_industries_section{
         flex-wrap: wrap;
@@ -1279,6 +1286,33 @@
             flex: 0 0 100%;
             max-width: 100%;
         }
+
+        .case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column .case_studies_group_listing .title a{
+            font-size: 18px;
+          }
+
+          .case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column:not(:nth-child(3n)) {
+            border-right: unset;
+        }
+
+        .case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column:not(:nth-child(2n)) {
+            border-right: 1px solid #d4d4d4;
+        }
+
+        
+.case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column:nth-last-child(2),
+.case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column:nth-last-child(3){
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column:nth-last-child(1){
+    border-bottom: none;
+}
     
     .footer_company_info .footer_column .footer_telephone a, .footer_company_info .footer_column .footer_email a{
         font-size: 18px;
@@ -1862,6 +1896,14 @@
       .owl-item.center{
         width: 300px !important;
       }
+
+      .case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column{
+        padding: 10px;
+      }
+
+      .case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column .case_studies_group_listing .title a {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 480px){

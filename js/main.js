@@ -47,7 +47,7 @@ $(document).ready(function(){
                                         <li><a href="industryaffiliations.html" data-src="images/About/Industry Affiliations.png">Industry Affiliations</a></li>
                                         <li><a href="servicemodel.html" data-src="images/About/Service Model.png">Service Model</a></li>
                                         <li><a href="team.html" data-src="images/About/Leadership Team.png">Leadership Team</a></li>
-                                        <li><a href="casestudies.html" data-src="images/About/Case Studies.png">Case Studies</a></li>
+                                        <li><a href="casestudiesgroup.html" data-src="images/About/Case Studies.png">Case Studies</a></li>
                                         <li><a href="testimonials.html" data-src="images/About/Customer Testimonials.png">Customer Testimonials</a></li>
                                     </ul>
                                     <div class="serviceImgChange">
@@ -169,7 +169,7 @@ $(document).ready(function(){
                                         <li><a href="industryaffiliations.html" data-src="images/About/Industry Affiliations.png">Industry Affiliations</a></li>
                                         <li><a href="servicemodel" data-src="images/About/Service Model.png">Service Model</a></li>
                                         <li><a href="team.html" data-src="images/About/Leadership Team.png">Leadership Team</a></li>
-                                        <li><a href="casestudies.html" data-src="images/About/Case Studies.png">Case Studies</a></li>
+                                        <li><a href="casestudiesgroup.html" data-src="images/About/Case Studies.png">Case Studies</a></li>
                                         <li><a href="testimonials.html" data-src="images/About/Customer Testimonials.png">Customer Testimonials</a></li>
                                         </ul>
                                     </div>
@@ -356,7 +356,7 @@ $(document).ready(function(){
                                     <li><a href="team.html">Leadership Team</a></li>
                                     <li><a href="industryaffiliations.html">Accreditations & Affiliations</a></li>
                                     <li><a href="testimonials.html">Customer Testimonials</a></li>
-                                    <li><a href="casestudies.html">Case Studies</a></li>
+                                    <li><a href="casestudiesgroup.html">Case Studies</a></li>
                                     <li><a href="servicemodel.html">Service Model</a></li>
                                 </ul>
                             </div>

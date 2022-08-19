@@ -209,7 +209,8 @@ table {
 .floating_contact_area .contact_button,
 .floating_contact_area .floating_contact_form .form-element button,
 .client_testimonial_slider_section .client_said_area,
-.custDrop .btn_custom{
+.custDrop .btn_custom,
+.case_studies_group_area .inner_case_studies_group_content{
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -3847,6 +3848,51 @@ marquee span {
   .comparisonTable table tr td input[type='reset']{
     color: #c40404;
   }
+
+  /* Case Studies Group Page */
+  .case_studies_group_area .inner_case_studies_group_content {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .case_studies_group_area .inner_case_studies_group_content {
+    flex-wrap: wrap;
+    padding: 45px 0 50px;
+  }
+
+  .case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column:not(:nth-child(3n)) {
+    border-right: 1px solid #d4d4d4;
+}
+
+.case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column{
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column:nth-last-child(1),
+.case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column:nth-last-child(2),
+.case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column:nth-last-child(3){
+  border-bottom: none;
+}
+
+
+  .case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 15px;
+  }
+
+  .case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column .case_studies_group_img img {
+    width: 100%;
+}
+
+.case_studies_group_area .inner_case_studies_group_content .case_studies_group_specific_column .case_studies_group_listing .title a{
+  font-size: 24px;
+  color: #333333;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 10px;
+  font-weight: 600;
+}
 
   /* Index Page Testimonial */
   .client_testimonial_slider_section{
